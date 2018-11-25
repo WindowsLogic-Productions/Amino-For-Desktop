@@ -15,4 +15,8 @@ Public Class AminoMain
     Private Sub AminoMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         GeckoWebBrowser1.Navigate("https://aminoapps.com/explore/")
     End Sub
+
+    Private Sub ToolStripButton6_Click(sender As Object, e As EventArgs) Handles ToolStripButton6.Click
+        GeckoWebBrowser1.Navigate("https://aminoapps.com/c/INAV")
+    End Sub
 End Class

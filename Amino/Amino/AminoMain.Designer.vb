@@ -42,6 +42,7 @@ Partial Class AminoMain
         Me.GeckoWebBrowser1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GeckoWebBrowser1.ConsoleMessageEventReceivesConsoleLogCalls = True
         Me.GeckoWebBrowser1.FrameEventsPropagateToMainWindow = False
         Me.GeckoWebBrowser1.Location = New System.Drawing.Point(0, 25)
         Me.GeckoWebBrowser1.Name = "GeckoWebBrowser1"
@@ -122,8 +123,8 @@ Partial Class AminoMain
         Me.ToolStripButton6.Image = CType(resources.GetObject("ToolStripButton6.Image"), System.Drawing.Image)
         Me.ToolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton6.Name = "ToolStripButton6"
-        Me.ToolStripButton6.Size = New System.Drawing.Size(176, 22)
-        Me.ToolStripButton6.Text = "Join WindowsLogic's Amino"
+        Me.ToolStripButton6.Size = New System.Drawing.Size(133, 22)
+        Me.ToolStripButton6.Text = "Join Interest Avenue"
         Me.ToolStripButton6.ToolTipText = "Join a community which bases itself on free speech, laughs, friendship and any to" &
     "pic you can think of. "
         '
