@@ -1,0 +1,17 @@
+I:\Projects\Amino\Amino\bin\x86\Debug\Amino.exe.config
+I:\Projects\Amino\Amino\bin\x86\Debug\Amino.exe
+I:\Projects\Amino\Amino\bin\x86\Debug\Amino.pdb
+I:\Projects\Amino\Amino\bin\x86\Debug\Amino.xml
+I:\Projects\Amino\Amino\bin\x86\Debug\Geckofx-Core.dll
+I:\Projects\Amino\Amino\bin\x86\Debug\Geckofx-Winforms.dll
+I:\Projects\Amino\Amino\bin\x86\Debug\Geckofx-Core.pdb
+I:\Projects\Amino\Amino\bin\x86\Debug\Geckofx-Winforms.pdb
+I:\Projects\Amino\Amino\obj\x86\Debug\Amino.vbprojAssemblyReference.cache
+I:\Projects\Amino\Amino\obj\x86\Debug\Amino.Resources.resources
+I:\Projects\Amino\Amino\obj\x86\Debug\Amino.vbproj.GenerateResource.cache
+I:\Projects\Amino\Amino\obj\x86\Debug\Amino.vbproj.CoreCompileInputs.cache
+I:\Projects\Amino\Amino\obj\x86\Debug\Amino.vbproj.CopyComplete
+I:\Projects\Amino\Amino\obj\x86\Debug\Amino.exe
+I:\Projects\Amino\Amino\obj\x86\Debug\Amino.xml
+I:\Projects\Amino\Amino\obj\x86\Debug\Amino.pdb
+I:\Projects\Amino\Amino\obj\x86\Debug\Amino.AminoMain.resources
