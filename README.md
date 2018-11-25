@@ -1,3 +1,5 @@
+<img src="https://windowslogic.co.uk/img/amino.png" width="250"></img>
+
 # About Amino™ For Desktop
 Amino™ For Desktop is a small Gecko-based application for using Amino easily on your Windows computer. I have made this open-source as I would like people to help on this project and add new features etc.
 
