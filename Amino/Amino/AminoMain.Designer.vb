@@ -30,8 +30,8 @@ Partial Class AminoMain
         Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton5 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripButton5 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripButton6 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStrip1.SuspendLayout()
@@ -99,6 +99,11 @@ Partial Class AminoMain
         Me.ToolStripButton4.Size = New System.Drawing.Size(65, 22)
         Me.ToolStripButton4.Text = "Explore"
         '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 25)
+        '
         'ToolStripButton5
         '
         Me.ToolStripButton5.Image = CType(resources.GetObject("ToolStripButton5.Image"), System.Drawing.Image)
@@ -106,11 +111,6 @@ Partial Class AminoMain
         Me.ToolStripButton5.Name = "ToolStripButton5"
         Me.ToolStripButton5.Size = New System.Drawing.Size(69, 22)
         Me.ToolStripButton5.Text = "Settings"
-        '
-        'ToolStripSeparator2
-        '
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 25)
         '
         'ToolStripSeparator3
         '
@@ -138,7 +138,7 @@ Partial Class AminoMain
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MinimumSize = New System.Drawing.Size(800, 600)
         Me.Name = "AminoMain"
-        Me.Text = "Amino"
+        Me.Text = "Amino™ For Desktop"
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
         Me.ResumeLayout(False)
