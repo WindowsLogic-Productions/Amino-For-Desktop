@@ -134,6 +134,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AminoAbout.resx">
+      <DependentUpon>AminoAbout.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AminoMain.resx">
       <DependentUpon>AminoMain.vb</DependentUpon>
     </EmbeddedResource>
