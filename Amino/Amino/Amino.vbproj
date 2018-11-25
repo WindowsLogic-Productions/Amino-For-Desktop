@@ -117,6 +117,12 @@
       <DependentUpon>AminoMain.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AminoSettings.Designer.vb">
+      <DependentUpon>AminoSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AminoSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
