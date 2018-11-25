@@ -16,7 +16,7 @@ Public Class AminoMain
         GeckoWebBrowser1.Navigate("https://aminoapps.com/explore/")
     End Sub
 
-    Private Sub ToolStripButton6_Click(sender As Object, e As EventArgs) Handles ToolStripButton6.Click
+    Private Sub ToolStripButton6_Click(sender As Object, e As EventArgs) Handles JoinButton.Click
         GeckoWebBrowser1.Navigate("https://aminoapps.com/c/INAV")
     End Sub
 End Class
