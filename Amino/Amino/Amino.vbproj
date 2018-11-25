@@ -192,6 +192,12 @@
     <Content Include="Firefox\sandboxbroker.dll" />
     <Content Include="Firefox\softokn3.dll" />
     <Content Include="Firefox\xul.dll" />
+    <None Include="Resources\windowslogic.ico" />
+    <None Include="Resources\Settings.ico" />
+    <None Include="Resources\Search.ico" />
+    <None Include="Resources\Refresh.ico" />
+    <None Include="Resources\Forward.ico" />
+    <None Include="Resources\Back.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Import Project="..\packages\Geckofx45.45.0.34\build\Geckofx45.targets" Condition="Exists('..\packages\Geckofx45.45.0.34\build\Geckofx45.targets')" />

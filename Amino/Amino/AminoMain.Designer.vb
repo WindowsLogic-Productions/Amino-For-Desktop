@@ -25,14 +25,14 @@ Partial Class AminoMain
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AminoMain))
         Me.GeckoWebBrowser1 = New Gecko.GeckoWebBrowser()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.BackButton = New System.Windows.Forms.ToolStripButton()
         Me.ForwardButton = New System.Windows.Forms.ToolStripButton()
         Me.RefreshButton = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.ExploreButton = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.SettingsButton = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.JoinButton = New System.Windows.Forms.ToolStripButton()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -52,78 +52,85 @@ Partial Class AminoMain
         '
         'ToolStrip1
         '
+        Me.ToolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BackButton, Me.ForwardButton, Me.RefreshButton, Me.ToolStripSeparator1, Me.ExploreButton, Me.ToolStripSeparator2, Me.SettingsButton, Me.ToolStripSeparator3, Me.JoinButton})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.ToolStrip1.Size = New System.Drawing.Size(946, 25)
+        Me.ToolStrip1.Size = New System.Drawing.Size(946, 39)
         Me.ToolStrip1.TabIndex = 1
         Me.ToolStrip1.Text = "ToolStrip1"
+        '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 39)
+        '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 39)
+        '
+        'ToolStripSeparator3
+        '
+        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 39)
         '
         'BackButton
         '
         Me.BackButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BackButton.Image = CType(resources.GetObject("BackButton.Image"), System.Drawing.Image)
+        Me.BackButton.Image = Global.Amino.My.Resources.Resources.Back
+        Me.BackButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.BackButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.BackButton.Name = "BackButton"
-        Me.BackButton.Size = New System.Drawing.Size(23, 22)
+        Me.BackButton.Size = New System.Drawing.Size(36, 36)
         Me.BackButton.Text = "Back"
         '
         'ForwardButton
         '
         Me.ForwardButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ForwardButton.Image = CType(resources.GetObject("ForwardButton.Image"), System.Drawing.Image)
+        Me.ForwardButton.Image = Global.Amino.My.Resources.Resources.Forward
+        Me.ForwardButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ForwardButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ForwardButton.Name = "ForwardButton"
-        Me.ForwardButton.Size = New System.Drawing.Size(23, 22)
+        Me.ForwardButton.Size = New System.Drawing.Size(36, 36)
         Me.ForwardButton.Text = "Forward"
         '
         'RefreshButton
         '
         Me.RefreshButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.RefreshButton.Image = CType(resources.GetObject("RefreshButton.Image"), System.Drawing.Image)
+        Me.RefreshButton.Image = Global.Amino.My.Resources.Resources.Refresh
+        Me.RefreshButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.RefreshButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.RefreshButton.Name = "RefreshButton"
-        Me.RefreshButton.Size = New System.Drawing.Size(23, 22)
+        Me.RefreshButton.Size = New System.Drawing.Size(36, 36)
         Me.RefreshButton.Text = "Refresh"
-        '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 25)
         '
         'ExploreButton
         '
-        Me.ExploreButton.Image = CType(resources.GetObject("ExploreButton.Image"), System.Drawing.Image)
+        Me.ExploreButton.Image = Global.Amino.My.Resources.Resources.Search
+        Me.ExploreButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ExploreButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ExploreButton.Name = "ExploreButton"
-        Me.ExploreButton.Size = New System.Drawing.Size(65, 22)
+        Me.ExploreButton.Size = New System.Drawing.Size(81, 36)
         Me.ExploreButton.Text = "Explore"
-        '
-        'ToolStripSeparator2
-        '
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 25)
         '
         'SettingsButton
         '
-        Me.SettingsButton.Image = CType(resources.GetObject("SettingsButton.Image"), System.Drawing.Image)
+        Me.SettingsButton.Image = Global.Amino.My.Resources.Resources.Settings
+        Me.SettingsButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.SettingsButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.SettingsButton.Name = "SettingsButton"
-        Me.SettingsButton.Size = New System.Drawing.Size(69, 22)
+        Me.SettingsButton.Size = New System.Drawing.Size(85, 36)
         Me.SettingsButton.Text = "Settings"
-        '
-        'ToolStripSeparator3
-        '
-        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 25)
         '
         'JoinButton
         '
-        Me.JoinButton.Image = CType(resources.GetObject("JoinButton.Image"), System.Drawing.Image)
+        Me.JoinButton.Image = Global.Amino.My.Resources.Resources.windowslogic
+        Me.JoinButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.JoinButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.JoinButton.Name = "JoinButton"
-        Me.JoinButton.Size = New System.Drawing.Size(133, 22)
+        Me.JoinButton.Size = New System.Drawing.Size(149, 36)
         Me.JoinButton.Text = "Join Interest Avenue"
         Me.JoinButton.ToolTipText = "Join a community which bases itself on free speech, laughs, friendship and any to" &
     "pic you can think of. "
