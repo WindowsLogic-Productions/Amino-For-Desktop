@@ -15,3 +15,13 @@ I:\Projects\Amino\Amino\obj\x86\Debug\Amino.exe
 I:\Projects\Amino\Amino\obj\x86\Debug\Amino.xml
 I:\Projects\Amino\Amino\obj\x86\Debug\Amino.pdb
 I:\Projects\Amino\Amino\obj\x86\Debug\Amino.AminoMain.resources
+F:\GitHub\Amino-For-Desktop\Amino\Amino\bin\x86\Debug\Geckofx-Core.dll
+F:\GitHub\Amino-For-Desktop\Amino\Amino\bin\x86\Debug\Geckofx-Winforms.dll
+F:\GitHub\Amino-For-Desktop\Amino\Amino\obj\x86\Debug\Amino.vbprojAssemblyReference.cache
+F:\GitHub\Amino-For-Desktop\Amino\Amino\obj\x86\Debug\Amino.AminoMain.resources
+F:\GitHub\Amino-For-Desktop\Amino\Amino\obj\x86\Debug\Amino.Resources.resources
+F:\GitHub\Amino-For-Desktop\Amino\Amino\obj\x86\Debug\Amino.vbproj.GenerateResource.cache
+F:\GitHub\Amino-For-Desktop\Amino\Amino\obj\x86\Debug\Amino.vbproj.CoreCompileInputs.cache
+F:\GitHub\Amino-For-Desktop\Amino\Amino\obj\x86\Debug\Amino.exe
+F:\GitHub\Amino-For-Desktop\Amino\Amino\obj\x86\Debug\Amino.xml
+F:\GitHub\Amino-For-Desktop\Amino\Amino\obj\x86\Debug\Amino.pdb
