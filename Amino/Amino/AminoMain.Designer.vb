@@ -33,6 +33,7 @@ Partial Class AminoMain
         Me.RefreshButton = New System.Windows.Forms.ToolStripButton()
         Me.ExploreButton = New System.Windows.Forms.ToolStripButton()
         Me.SettingsButton = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripDropDownButton1 = New System.Windows.Forms.ToolStripDropDownButton()
         Me.JoinButton = New System.Windows.Forms.ToolStripButton()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -53,7 +54,7 @@ Partial Class AminoMain
         'ToolStrip1
         '
         Me.ToolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BackButton, Me.ForwardButton, Me.RefreshButton, Me.ToolStripSeparator1, Me.ExploreButton, Me.ToolStripSeparator2, Me.SettingsButton, Me.ToolStripSeparator3, Me.JoinButton})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BackButton, Me.ForwardButton, Me.RefreshButton, Me.ToolStripSeparator1, Me.ExploreButton, Me.ToolStripSeparator2, Me.SettingsButton, Me.ToolStripSeparator3, Me.ToolStripDropDownButton1, Me.JoinButton})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
@@ -124,6 +125,16 @@ Partial Class AminoMain
         Me.SettingsButton.Size = New System.Drawing.Size(85, 36)
         Me.SettingsButton.Text = "Settings"
         '
+        'ToolStripDropDownButton1
+        '
+        Me.ToolStripDropDownButton1.BackColor = System.Drawing.SystemColors.Control
+        Me.ToolStripDropDownButton1.Image = Global.Amino.My.Resources.Resources.NewWindow
+        Me.ToolStripDropDownButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.ToolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripDropDownButton1.Name = "ToolStripDropDownButton1"
+        Me.ToolStripDropDownButton1.Size = New System.Drawing.Size(113, 36)
+        Me.ToolStripDropDownButton1.Text = "Application"
+        '
         'JoinButton
         '
         Me.JoinButton.Image = Global.Amino.My.Resources.Resources.windowslogic
@@ -165,4 +176,5 @@ Partial Class AminoMain
     Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
     Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
     Friend WithEvents JoinButton As ToolStripButton
+    Friend WithEvents ToolStripDropDownButton1 As ToolStripDropDownButton
 End Class
