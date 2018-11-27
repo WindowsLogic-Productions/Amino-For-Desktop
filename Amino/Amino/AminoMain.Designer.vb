@@ -34,7 +34,11 @@ Partial Class AminoMain
         Me.ExploreButton = New System.Windows.Forms.ToolStripButton()
         Me.SettingsButton = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripDropDownButton1 = New System.Windows.Forms.ToolStripDropDownButton()
+        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.JoinButton = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,9 +49,9 @@ Partial Class AminoMain
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GeckoWebBrowser1.ConsoleMessageEventReceivesConsoleLogCalls = True
         Me.GeckoWebBrowser1.FrameEventsPropagateToMainWindow = False
-        Me.GeckoWebBrowser1.Location = New System.Drawing.Point(0, 25)
+        Me.GeckoWebBrowser1.Location = New System.Drawing.Point(0, 39)
         Me.GeckoWebBrowser1.Name = "GeckoWebBrowser1"
-        Me.GeckoWebBrowser1.Size = New System.Drawing.Size(946, 563)
+        Me.GeckoWebBrowser1.Size = New System.Drawing.Size(946, 549)
         Me.GeckoWebBrowser1.TabIndex = 0
         Me.GeckoWebBrowser1.UseHttpActivityObserver = False
         '
@@ -128,12 +132,25 @@ Partial Class AminoMain
         'ToolStripDropDownButton1
         '
         Me.ToolStripDropDownButton1.BackColor = System.Drawing.SystemColors.Control
+        Me.ToolStripDropDownButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HelpToolStripMenuItem, Me.AboutToolStripMenuItem, Me.ToolStripSeparator4, Me.ExitToolStripMenuItem})
         Me.ToolStripDropDownButton1.Image = Global.Amino.My.Resources.Resources.NewWindow
         Me.ToolStripDropDownButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ToolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripDropDownButton1.Name = "ToolStripDropDownButton1"
         Me.ToolStripDropDownButton1.Size = New System.Drawing.Size(113, 36)
         Me.ToolStripDropDownButton1.Text = "Application"
+        '
+        'HelpToolStripMenuItem
+        '
+        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.HelpToolStripMenuItem.Text = "Help"
+        '
+        'AboutToolStripMenuItem
+        '
+        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AboutToolStripMenuItem.Text = "About"
         '
         'JoinButton
         '
@@ -145,6 +162,17 @@ Partial Class AminoMain
         Me.JoinButton.Text = "Join Interest Avenue"
         Me.JoinButton.ToolTipText = "Join a community which bases itself on free speech, laughs, friendship and any to" &
     "pic you can think of. "
+        '
+        'ToolStripSeparator4
+        '
+        Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(177, 6)
+        '
+        'ExitToolStripMenuItem
+        '
+        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'AminoMain
         '
@@ -177,4 +205,8 @@ Partial Class AminoMain
     Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
     Friend WithEvents JoinButton As ToolStripButton
     Friend WithEvents ToolStripDropDownButton1 As ToolStripDropDownButton
+    Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
+    Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
 End Class

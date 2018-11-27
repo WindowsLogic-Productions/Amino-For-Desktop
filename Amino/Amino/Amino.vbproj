@@ -146,6 +146,9 @@
     <EmbeddedResource Include="AminoMain.resx">
       <DependentUpon>AminoMain.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AminoSettings.resx">
+      <DependentUpon>AminoSettings.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -192,6 +195,7 @@
     <Content Include="Firefox\sandboxbroker.dll" />
     <Content Include="Firefox\softokn3.dll" />
     <Content Include="Firefox\xul.dll" />
+    <None Include="Resources\Amino.ico" />
     <None Include="Resources\NewWindow.ico" />
     <None Include="Resources\windowslogic.ico" />
     <None Include="Resources\Settings.ico" />

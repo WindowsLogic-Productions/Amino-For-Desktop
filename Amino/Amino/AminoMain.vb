@@ -12,11 +12,35 @@ Public Class AminoMain
 
     End Sub
 
+#Region "Load Settings"
     Private Sub AminoMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         GeckoWebBrowser1.Navigate("https://aminoapps.com/explore/")
     End Sub
+#End Region
+#Region "Buttons"
 
-    Private Sub ToolStripButton6_Click(sender As Object, e As EventArgs) Handles JoinButton.Click
+    Private Sub BackButton_Click(sender As Object, e As EventArgs) Handles BackButton.Click
+        GeckoWebBrowser1.GoBack()
+    End Sub
+
+    Private Sub ForwardButton_Click(sender As Object, e As EventArgs) Handles ForwardButton.Click
+        GeckoWebBrowser1.GoForward()
+    End Sub
+
+    Private Sub RefreshButton_Click(sender As Object, e As EventArgs) Handles RefreshButton.Click
+        GeckoWebBrowser1.Reload()
+    End Sub
+
+    Private Sub ExploreButton_Click(sender As Object, e As EventArgs) Handles ExploreButton.Click
+        GeckoWebBrowser1.Navigate("https://aminoapps.com/explore/")
+    End Sub
+
+    Private Sub SettingsButton_Click(sender As Object, e As EventArgs) Handles SettingsButton.Click
+        AminoSettings.ShowDialog()
+    End Sub
+
+    Private Sub JoinButton_Click(sender As Object, e As EventArgs) Handles JoinButton.Click
         GeckoWebBrowser1.Navigate("https://aminoapps.com/c/INAV")
     End Sub
+#End Region
 End Class
