@@ -28,6 +28,7 @@ Partial Class AminoAbout
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Copyright = New System.Windows.Forms.Label()
+        Me.OKButton = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -40,7 +41,7 @@ Partial Class AminoAbout
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(524, 53)
+        Me.Panel1.Size = New System.Drawing.Size(394, 53)
         Me.Panel1.TabIndex = 5
         '
         'VerInfo
@@ -70,7 +71,7 @@ Partial Class AminoAbout
         Me.LinkLabel1.AutoSize = True
         Me.LinkLabel1.ForeColor = System.Drawing.Color.White
         Me.LinkLabel1.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel1.Location = New System.Drawing.Point(286, 186)
+        Me.LinkLabel1.Location = New System.Drawing.Point(222, 107)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(112, 13)
         Me.LinkLabel1.TabIndex = 7
@@ -82,21 +83,30 @@ Partial Class AminoAbout
         Me.Copyright.AutoSize = True
         Me.Copyright.BackColor = System.Drawing.Color.Transparent
         Me.Copyright.ForeColor = System.Drawing.Color.White
-        Me.Copyright.Location = New System.Drawing.Point(97, 147)
+        Me.Copyright.Location = New System.Drawing.Point(12, 69)
         Me.Copyright.Name = "Copyright"
-        Me.Copyright.Size = New System.Drawing.Size(331, 65)
+        Me.Copyright.Size = New System.Drawing.Size(371, 65)
         Me.Copyright.TabIndex = 6
-        Me.Copyright.Text = "Tweeter is Copyright © 2018 WindowsLogic. All rights reserved." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Twitter logo is C" &
-    "opyright © Twitter." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "This product is licensed under the                       " &
-    "               to:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "%user%"
+        Me.Copyright.Text = resources.GetString("Copyright.Text")
         Me.Copyright.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'OKButton
+        '
+        Me.OKButton.Location = New System.Drawing.Point(307, 147)
+        Me.OKButton.Name = "OKButton"
+        Me.OKButton.Size = New System.Drawing.Size(75, 23)
+        Me.OKButton.TabIndex = 8
+        Me.OKButton.Text = "OK"
+        Me.OKButton.UseVisualStyleBackColor = True
         '
         'AminoAbout
         '
+        Me.AcceptButton = Me.OKButton
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(524, 359)
+        Me.ClientSize = New System.Drawing.Size(394, 182)
+        Me.Controls.Add(Me.OKButton)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Copyright)
         Me.Controls.Add(Me.Panel1)
@@ -121,4 +131,5 @@ Partial Class AminoAbout
     Friend WithEvents VerInfo As Label
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents Copyright As Label
+    Friend WithEvents OKButton As Button
 End Class
