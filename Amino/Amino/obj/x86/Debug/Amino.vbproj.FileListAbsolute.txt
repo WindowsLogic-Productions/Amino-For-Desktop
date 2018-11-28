@@ -40,3 +40,14 @@ C:\Users\plain\Documents\GitHub\Amino-For-Desktop\Amino\Amino\obj\x86\Debug\Amin
 C:\Users\plain\Documents\GitHub\Amino-For-Desktop\Amino\Amino\obj\x86\Debug\Amino.exe
 C:\Users\plain\Documents\GitHub\Amino-For-Desktop\Amino\Amino\obj\x86\Debug\Amino.xml
 C:\Users\plain\Documents\GitHub\Amino-For-Desktop\Amino\Amino\obj\x86\Debug\Amino.pdb
+F:\GitHub\Amino-For-Desktop\Amino\Amino\bin\x86\Debug\Amino.exe.config
+F:\GitHub\Amino-For-Desktop\Amino\Amino\bin\x86\Debug\Amino.exe
+F:\GitHub\Amino-For-Desktop\Amino\Amino\bin\x86\Debug\Amino.pdb
+F:\GitHub\Amino-For-Desktop\Amino\Amino\bin\x86\Debug\Amino.xml
+F:\GitHub\Amino-For-Desktop\Amino\Amino\obj\x86\Debug\Amino.AminoAbout.resources
+F:\GitHub\Amino-For-Desktop\Amino\Amino\obj\x86\Debug\Amino.AminoSettings.resources
+F:\GitHub\Amino-For-Desktop\Amino\Amino\obj\x86\Debug\Amino.vbproj.CopyComplete
+F:\GitHub\Amino-For-Desktop\Amino\Amino\obj\x86\Debug\Amino.AminoWhatsNew.resources
+F:\GitHub\Amino-For-Desktop\Amino\Amino\obj\x86\Debug\Amino.UpdaterPrompt.resources
+F:\GitHub\Amino-For-Desktop\Amino\Amino\obj\x86\Debug\Amino.errordiag.resources
+F:\GitHub\Amino-For-Desktop\Amino\Amino\obj\x86\Debug\Amino.Updater.resources

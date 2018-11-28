@@ -72,6 +72,9 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Amino.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Geckofx-Core, Version=60.0.22.0, Culture=neutral, PublicKeyToken=3209ac31600d1857, processorArchitecture=x86">
       <HintPath>..\packages\Geckofx60.32.60.0.22\lib\net45\Geckofx-Core.dll</HintPath>
@@ -104,10 +107,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AminoAbout.Designer.vb">
+    <Compile Include="Dialogues\AminoAbout.Designer.vb">
       <DependentUpon>AminoAbout.vb</DependentUpon>
     </Compile>
-    <Compile Include="AminoAbout.vb">
+    <Compile Include="Dialogues\AminoAbout.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AminoMain.vb">
@@ -121,6 +124,18 @@
       <DependentUpon>AminoSettings.vb</DependentUpon>
     </Compile>
     <Compile Include="AminoSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogues\AminoWhatsNew.Designer.vb">
+      <DependentUpon>AminoWhatsNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogues\AminoWhatsNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogues\Errordiag.designer.vb">
+      <DependentUpon>Errordiag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogues\Errordiag.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -138,9 +153,22 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Dialogues\Updater.designer.vb">
+      <DependentUpon>Updater.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogues\Updater.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogues\UpdaterPrompt.designer.vb">
+      <DependentUpon>UpdaterPrompt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogues\UpdaterPrompt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\Variables.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AminoAbout.resx">
+    <EmbeddedResource Include="Dialogues\AminoAbout.resx">
       <DependentUpon>AminoAbout.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AminoMain.resx">
@@ -149,11 +177,23 @@
     <EmbeddedResource Include="AminoSettings.resx">
       <DependentUpon>AminoSettings.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dialogues\AminoWhatsNew.resx">
+      <DependentUpon>AminoWhatsNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogues\Errordiag.resx">
+      <DependentUpon>Errordiag.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogues\Updater.resx">
+      <DependentUpon>Updater.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogues\UpdaterPrompt.resx">
+      <DependentUpon>UpdaterPrompt.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -167,8 +207,8 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <None Include="App.config" />
-    <None Include="packages.config" />
+    <None Include="Other\App.config" />
+    <None Include="Other\packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Firefox\AccessibleHandler.dll" />
@@ -195,6 +235,16 @@
     <Content Include="Firefox\sandboxbroker.dll" />
     <Content Include="Firefox\softokn3.dll" />
     <Content Include="Firefox\xul.dll" />
+    <None Include="Resources\Changes.ico" />
+    <None Include="Resources\Update.ico" />
+    <None Include="Resources\GoodGradient.png" />
+    <None Include="Resources\Circle Warning.ico" />
+    <None Include="Resources\WarningGradient.png" />
+    <None Include="Resources\Error.ico" />
+    <None Include="Resources\Okay.ico" />
+    <None Include="Resources\Exit.ico" />
+    <None Include="Resources\Information.ico" />
+    <None Include="Resources\Question.ico" />
     <None Include="Resources\Amino.ico" />
     <None Include="Resources\NewWindow.ico" />
     <None Include="Resources\windowslogic.ico" />

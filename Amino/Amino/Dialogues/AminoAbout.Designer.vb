@@ -24,8 +24,8 @@ Partial Class AminoAbout
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AminoAbout))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.VerInfo = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.VerInfo = New System.Windows.Forms.Label()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Copyright = New System.Windows.Forms.Label()
         Me.OKButton = New System.Windows.Forms.Button()
@@ -44,6 +44,16 @@ Partial Class AminoAbout
         Me.Panel1.Size = New System.Drawing.Size(394, 53)
         Me.Panel1.TabIndex = 5
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.Amino.My.Resources.Resources.Amino
+        Me.PictureBox2.Location = New System.Drawing.Point(12, 10)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox2.TabIndex = 4
+        Me.PictureBox2.TabStop = False
+        '
         'VerInfo
         '
         Me.VerInfo.AutoSize = True
@@ -54,16 +64,6 @@ Partial Class AminoAbout
         Me.VerInfo.TabIndex = 2
         Me.VerInfo.Text = "%appname% %ver%"
         Me.VerInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.Amino.My.Resources.Resources.Amino
-        Me.PictureBox2.Location = New System.Drawing.Point(12, 10)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox2.TabIndex = 4
-        Me.PictureBox2.TabStop = False
         '
         'LinkLabel1
         '
@@ -92,10 +92,11 @@ Partial Class AminoAbout
         '
         'OKButton
         '
+        Me.OKButton.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.OKButton.Location = New System.Drawing.Point(307, 147)
         Me.OKButton.Name = "OKButton"
         Me.OKButton.Size = New System.Drawing.Size(75, 23)
-        Me.OKButton.TabIndex = 8
+        Me.OKButton.TabIndex = 0
         Me.OKButton.Text = "OK"
         Me.OKButton.UseVisualStyleBackColor = True
         '

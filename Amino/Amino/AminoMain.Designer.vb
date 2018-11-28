@@ -25,20 +25,23 @@ Partial Class AminoMain
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AminoMain))
         Me.GeckoWebBrowser1 = New Gecko.GeckoWebBrowser()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.BackButton = New System.Windows.Forms.ToolStripButton()
         Me.ForwardButton = New System.Windows.Forms.ToolStripButton()
         Me.RefreshButton = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.ExploreButton = New System.Windows.Forms.ToolStripButton()
-        Me.SettingsButton = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripDropDownButton1 = New System.Windows.Forms.ToolStripDropDownButton()
+        Me.SettingsPanelToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
+        Me.WhatsNewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CheckForUpdatesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.JoinButton = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.JoinButton = New System.Windows.Forms.ToolStripButton()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -58,28 +61,13 @@ Partial Class AminoMain
         'ToolStrip1
         '
         Me.ToolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BackButton, Me.ForwardButton, Me.RefreshButton, Me.ToolStripSeparator1, Me.ExploreButton, Me.ToolStripSeparator2, Me.SettingsButton, Me.ToolStripSeparator3, Me.ToolStripDropDownButton1, Me.JoinButton})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BackButton, Me.ForwardButton, Me.RefreshButton, Me.ToolStripSeparator1, Me.ExploreButton, Me.ToolStripSeparator2, Me.ToolStripDropDownButton1, Me.JoinButton})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
         Me.ToolStrip1.Size = New System.Drawing.Size(946, 39)
         Me.ToolStrip1.TabIndex = 1
         Me.ToolStrip1.Text = "ToolStrip1"
-        '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 39)
-        '
-        'ToolStripSeparator2
-        '
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 39)
-        '
-        'ToolStripSeparator3
-        '
-        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 39)
         '
         'BackButton
         '
@@ -111,6 +99,11 @@ Partial Class AminoMain
         Me.RefreshButton.Size = New System.Drawing.Size(36, 36)
         Me.RefreshButton.Text = "Refresh"
         '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 39)
+        '
         'ExploreButton
         '
         Me.ExploreButton.Image = Global.Amino.My.Resources.Resources.Search
@@ -120,19 +113,15 @@ Partial Class AminoMain
         Me.ExploreButton.Size = New System.Drawing.Size(81, 36)
         Me.ExploreButton.Text = "Explore"
         '
-        'SettingsButton
+        'ToolStripSeparator2
         '
-        Me.SettingsButton.Image = Global.Amino.My.Resources.Resources.Settings
-        Me.SettingsButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.SettingsButton.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.SettingsButton.Name = "SettingsButton"
-        Me.SettingsButton.Size = New System.Drawing.Size(85, 36)
-        Me.SettingsButton.Text = "Settings"
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 39)
         '
         'ToolStripDropDownButton1
         '
         Me.ToolStripDropDownButton1.BackColor = System.Drawing.SystemColors.Control
-        Me.ToolStripDropDownButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HelpToolStripMenuItem, Me.AboutToolStripMenuItem, Me.ToolStripSeparator4, Me.ExitToolStripMenuItem})
+        Me.ToolStripDropDownButton1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SettingsPanelToolStripMenuItem, Me.ToolStripSeparator5, Me.WhatsNewToolStripMenuItem, Me.CheckForUpdatesToolStripMenuItem, Me.ToolStripSeparator3, Me.HelpToolStripMenuItem, Me.AboutToolStripMenuItem, Me.ToolStripSeparator4, Me.ExitToolStripMenuItem})
         Me.ToolStripDropDownButton1.Image = Global.Amino.My.Resources.Resources.NewWindow
         Me.ToolStripDropDownButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ToolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta
@@ -140,17 +129,71 @@ Partial Class AminoMain
         Me.ToolStripDropDownButton1.Size = New System.Drawing.Size(113, 36)
         Me.ToolStripDropDownButton1.Text = "Application"
         '
+        'SettingsPanelToolStripMenuItem
+        '
+        Me.SettingsPanelToolStripMenuItem.Image = Global.Amino.My.Resources.Resources.Settings
+        Me.SettingsPanelToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.SettingsPanelToolStripMenuItem.Name = "SettingsPanelToolStripMenuItem"
+        Me.SettingsPanelToolStripMenuItem.Size = New System.Drawing.Size(196, 38)
+        Me.SettingsPanelToolStripMenuItem.Text = "Settings Panel"
+        '
+        'ToolStripSeparator5
+        '
+        Me.ToolStripSeparator5.Name = "ToolStripSeparator5"
+        Me.ToolStripSeparator5.Size = New System.Drawing.Size(193, 6)
+        '
+        'WhatsNewToolStripMenuItem
+        '
+        Me.WhatsNewToolStripMenuItem.Image = Global.Amino.My.Resources.Resources.Changes
+        Me.WhatsNewToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.WhatsNewToolStripMenuItem.Name = "WhatsNewToolStripMenuItem"
+        Me.WhatsNewToolStripMenuItem.Size = New System.Drawing.Size(196, 38)
+        Me.WhatsNewToolStripMenuItem.Text = "What's new?"
+        '
+        'CheckForUpdatesToolStripMenuItem
+        '
+        Me.CheckForUpdatesToolStripMenuItem.Image = Global.Amino.My.Resources.Resources.Update
+        Me.CheckForUpdatesToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.CheckForUpdatesToolStripMenuItem.Name = "CheckForUpdatesToolStripMenuItem"
+        Me.CheckForUpdatesToolStripMenuItem.Size = New System.Drawing.Size(196, 38)
+        Me.CheckForUpdatesToolStripMenuItem.Text = "Check for updates..."
+        '
+        'ToolStripSeparator3
+        '
+        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(193, 6)
+        '
         'HelpToolStripMenuItem
         '
+        Me.HelpToolStripMenuItem.Image = Global.Amino.My.Resources.Resources.Question
+        Me.HelpToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.HelpToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(196, 38)
         Me.HelpToolStripMenuItem.Text = "Help"
         '
         'AboutToolStripMenuItem
         '
+        Me.AboutToolStripMenuItem.Image = Global.Amino.My.Resources.Resources.Information
+        Me.AboutToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AboutToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F2
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(196, 38)
         Me.AboutToolStripMenuItem.Text = "About"
+        '
+        'ToolStripSeparator4
+        '
+        Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(193, 6)
+        '
+        'ExitToolStripMenuItem
+        '
+        Me.ExitToolStripMenuItem.Image = Global.Amino.My.Resources.Resources.ExitIco
+        Me.ExitToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        Me.ExitToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.F4), System.Windows.Forms.Keys)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(196, 38)
+        Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'JoinButton
         '
@@ -162,17 +205,6 @@ Partial Class AminoMain
         Me.JoinButton.Text = "Join Interest Avenue"
         Me.JoinButton.ToolTipText = "Join a community which bases itself on free speech, laughs, friendship and any to" &
     "pic you can think of. "
-        '
-        'ToolStripSeparator4
-        '
-        Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-        Me.ToolStripSeparator4.Size = New System.Drawing.Size(177, 6)
-        '
-        'ExitToolStripMenuItem
-        '
-        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'AminoMain
         '
@@ -200,13 +232,16 @@ Partial Class AminoMain
     Friend WithEvents RefreshButton As ToolStripButton
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
     Friend WithEvents ExploreButton As ToolStripButton
-    Friend WithEvents SettingsButton As ToolStripButton
     Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
-    Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
     Friend WithEvents JoinButton As ToolStripButton
     Friend WithEvents ToolStripDropDownButton1 As ToolStripDropDownButton
     Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SettingsPanelToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator5 As ToolStripSeparator
+    Friend WithEvents WhatsNewToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CheckForUpdatesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
 End Class
