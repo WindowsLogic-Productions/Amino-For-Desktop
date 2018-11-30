@@ -107,6 +107,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AminoHelp.Designer.vb">
+      <DependentUpon>AminoHelp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AminoHelp.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Dialogues\AminoAbout.Designer.vb">
       <DependentUpon>AminoAbout.vb</DependentUpon>
     </Compile>
@@ -168,6 +174,9 @@
     <Compile Include="Other\Variables.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AminoHelp.resx">
+      <DependentUpon>AminoHelp.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dialogues\AminoAbout.resx">
       <DependentUpon>AminoAbout.vb</DependentUpon>
     </EmbeddedResource>

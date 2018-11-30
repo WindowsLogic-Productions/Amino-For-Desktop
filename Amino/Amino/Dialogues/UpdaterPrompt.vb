@@ -12,7 +12,7 @@
 #End Region
 #Region "Buttons"
     Private Sub UpdateButton_Click(sender As Object, e As EventArgs) Handles UpdateButton.Click
-        Updater.Show()
+        Updater.ShowDialog()
         Me.Close()
     End Sub
 

@@ -51,3 +51,4 @@ F:\GitHub\Amino-For-Desktop\Amino\Amino\obj\x86\Debug\Amino.AminoWhatsNew.resour
 F:\GitHub\Amino-For-Desktop\Amino\Amino\obj\x86\Debug\Amino.UpdaterPrompt.resources
 F:\GitHub\Amino-For-Desktop\Amino\Amino\obj\x86\Debug\Amino.errordiag.resources
 F:\GitHub\Amino-For-Desktop\Amino\Amino\obj\x86\Debug\Amino.Updater.resources
+F:\GitHub\Amino-For-Desktop\Amino\Amino\obj\x86\Debug\Amino.AminoHelp.resources

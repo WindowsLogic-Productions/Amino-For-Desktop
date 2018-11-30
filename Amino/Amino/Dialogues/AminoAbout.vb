@@ -16,7 +16,9 @@
 
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
 
-        Process.Start("https://windowslogic.co.uk/appagreement.php")
+        AminoHelp.Show()
+        AminoHelp.Text = "Software Agreement"
+        AminoHelp.GeckoWebBrowser1.Navigate("https://windowslogic.co.uk/appagreement.php")
 
     End Sub
 End Class

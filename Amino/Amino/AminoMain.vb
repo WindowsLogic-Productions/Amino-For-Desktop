@@ -50,7 +50,8 @@ Public Class AminoMain
     End Sub
 
     Private Sub HelpToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HelpToolStripMenuItem.Click
-        GeckoWebBrowser1.Navigate("https://docs.windowslogic.co.uk/afd-index.php")
+        AminoHelp.Show()
+        AminoHelp.GeckoWebBrowser1.Navigate("https://docs.windowslogic.co.uk/amino-index.php")
     End Sub
 
     Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
@@ -66,7 +67,7 @@ Public Class AminoMain
     End Sub
 
     Private Sub CheckForUpdatesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CheckForUpdatesToolStripMenuItem.Click
-        UpdaterPrompt.ShowDialog()
+        Updater.ShowDialog()
     End Sub
 
 #End Region
