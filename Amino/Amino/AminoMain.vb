@@ -70,5 +70,9 @@ Public Class AminoMain
         Updater.ShowDialog()
     End Sub
 
+    Private Sub JumpButton_Click(sender As Object, e As EventArgs) Handles JumpButton.Click
+        AminoJump.ShowDialog()
+    End Sub
+
 #End Region
 End Class

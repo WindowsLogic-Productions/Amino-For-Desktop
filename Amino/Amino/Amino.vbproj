@@ -75,6 +75,9 @@
   <PropertyGroup>
     <ApplicationIcon>Resources\Amino.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Geckofx-Core, Version=60.0.22.0, Culture=neutral, PublicKeyToken=3209ac31600d1857, processorArchitecture=x86">
       <HintPath>..\packages\Geckofx60.32.60.0.22\lib\net45\Geckofx-Core.dll</HintPath>
@@ -111,6 +114,12 @@
       <DependentUpon>AminoHelp.vb</DependentUpon>
     </Compile>
     <Compile Include="AminoHelp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AminoJump.Designer.vb">
+      <DependentUpon>AminoJump.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AminoJump.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Dialogues\AminoAbout.Designer.vb">
@@ -177,6 +186,9 @@
     <EmbeddedResource Include="AminoHelp.resx">
       <DependentUpon>AminoHelp.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AminoJump.resx">
+      <DependentUpon>AminoJump.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dialogues\AminoAbout.resx">
       <DependentUpon>AminoAbout.vb</DependentUpon>
     </EmbeddedResource>
@@ -207,6 +219,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Firefox\omni.ja" />
+    <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -244,6 +257,7 @@
     <Content Include="Firefox\sandboxbroker.dll" />
     <Content Include="Firefox\softokn3.dll" />
     <Content Include="Firefox\xul.dll" />
+    <None Include="Resources\Jump.ico" />
     <None Include="Resources\Changes.ico" />
     <None Include="Resources\Update.ico" />
     <None Include="Resources\GoodGradient.png" />

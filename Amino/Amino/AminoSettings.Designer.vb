@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class AminoSettings
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,20 +20,20 @@ Partial Class AminoSettings
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AminoSettings))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.UpdatesTab = New System.Windows.Forms.TabPage()
         Me.UpdateBox = New System.Windows.Forms.GroupBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.EnableUpdates = New System.Windows.Forms.RadioButton()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.DisableUpdates = New System.Windows.Forms.RadioButton()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.TabControl1.SuspendLayout()
-        Me.TabPage1.SuspendLayout()
+        Me.UpdatesTab.SuspendLayout()
         Me.UpdateBox.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -41,23 +41,23 @@ Partial Class AminoSettings
         '
         'TabControl1
         '
-        Me.TabControl1.Controls.Add(Me.TabPage1)
-        Me.TabControl1.Location = New System.Drawing.Point(12, 12)
+        Me.TabControl1.Controls.Add(Me.UpdatesTab)
+        Me.TabControl1.Location = New System.Drawing.Point(12, 135)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(396, 272)
+        Me.TabControl1.Size = New System.Drawing.Size(396, 149)
         Me.TabControl1.TabIndex = 1
         '
-        'TabPage1
+        'UpdatesTab
         '
-        Me.TabPage1.Controls.Add(Me.UpdateBox)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(388, 246)
-        Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "Updates"
-        Me.TabPage1.UseVisualStyleBackColor = True
+        Me.UpdatesTab.Controls.Add(Me.UpdateBox)
+        Me.UpdatesTab.Location = New System.Drawing.Point(4, 22)
+        Me.UpdatesTab.Name = "UpdatesTab"
+        Me.UpdatesTab.Padding = New System.Windows.Forms.Padding(3)
+        Me.UpdatesTab.Size = New System.Drawing.Size(388, 123)
+        Me.UpdatesTab.TabIndex = 0
+        Me.UpdatesTab.Text = "Updates"
+        Me.UpdatesTab.UseVisualStyleBackColor = True
         '
         'UpdateBox
         '
@@ -73,6 +73,26 @@ Partial Class AminoSettings
         Me.UpdateBox.TabIndex = 15
         Me.UpdateBox.TabStop = False
         Me.UpdateBox.Text = "Update Settings"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.Amino.My.Resources.Resources.Okay
+        Me.PictureBox1.Location = New System.Drawing.Point(6, 21)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox1.TabIndex = 8
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.Amino.My.Resources.Resources.ErrorIco
+        Me.PictureBox2.Location = New System.Drawing.Point(6, 59)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox2.TabIndex = 10
+        Me.PictureBox2.TabStop = False
         '
         'EnableUpdates
         '
@@ -116,26 +136,6 @@ Partial Class AminoSettings
         Me.Label3.TabIndex = 11
         Me.Label3.Text = "Do not check for updates."
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.Amino.My.Resources.Resources.Okay
-        Me.PictureBox1.Location = New System.Drawing.Point(6, 21)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox1.TabIndex = 8
-        Me.PictureBox1.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.Amino.My.Resources.Resources.ErrorIco
-        Me.PictureBox2.Location = New System.Drawing.Point(6, 59)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox2.TabIndex = 10
-        Me.PictureBox2.TabStop = False
-        '
         'AminoSettings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -152,7 +152,7 @@ Partial Class AminoSettings
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Settings Panel"
         Me.TabControl1.ResumeLayout(False)
-        Me.TabPage1.ResumeLayout(False)
+        Me.UpdatesTab.ResumeLayout(False)
         Me.UpdateBox.ResumeLayout(False)
         Me.UpdateBox.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -161,7 +161,7 @@ Partial Class AminoSettings
 
     End Sub
     Friend WithEvents TabControl1 As TabControl
-    Friend WithEvents TabPage1 As TabPage
+    Friend WithEvents UpdatesTab As TabPage
     Friend WithEvents UpdateBox As GroupBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox

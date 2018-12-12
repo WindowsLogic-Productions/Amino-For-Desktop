@@ -37,7 +37,7 @@ Partial Class AminoWhatsNew
         Me.ListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.ListBox1.ForeColor = System.Drawing.Color.White
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Items.AddRange(New Object() {"~Version 1.0.0.0~", "1. Initial release.", "2. Browse Amino and chat with friends on your PC."})
+        Me.ListBox1.Items.AddRange(New Object() {"~Version 2.0.0.0~", "1. Added 'Jump To...' which allows users to jump to Aminos via ID.", "2. ", "", "~Version 1.0.0.0~", "1. Initial release.", "2. Browse Amino and chat with friends on your PC."})
         Me.ListBox1.Location = New System.Drawing.Point(0, 52)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(531, 312)
@@ -57,17 +57,17 @@ Partial Class AminoWhatsNew
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(12, 11)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(379, 30)
+        Me.Label1.Size = New System.Drawing.Size(378, 30)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "See what's changed in the application..."
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Amino.My.Resources.Resources.GoodGradient
-        Me.PictureBox1.Location = New System.Drawing.Point(487, 9)
+        Me.PictureBox1.Location = New System.Drawing.Point(397, 11)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(380, 64)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -89,7 +89,7 @@ Partial Class AminoWhatsNew
         Me.MinimizeBox = False
         Me.Name = "AminoWhatsNew"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "AminoWhatsNew"
+        Me.Text = "What's New?"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
