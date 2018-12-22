@@ -3,7 +3,7 @@
 # About Amino™ For Desktop
 Amino™ For Desktop is a small Gecko-based application for using Amino easily on your Windows computer. I have made this open-source as I would like people to help on this project and add new features etc.
 
-The goal is to create a nice alternative to using Amino on phones since who wants to use a phone all the time?
+The goal is to create a nice alternative to using Amino on phones since who wants to use a phone all the time? Phones have small screens and are a pain to use if you want to get something productive done. (That's why the iPad Pro fails so hard.)
 
 # Download
 
