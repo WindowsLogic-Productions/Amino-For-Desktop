@@ -12,3 +12,6 @@ Download the latest version of Amino for Desktop on the [Releases](https://githu
 # Support & Feedback
 
 Use the issues tab on this GitHub page to notify me of bugs and such. All support will be handled through here.
+
+# Donate
+Share the love and <a href="https://paypal.me/windowslogic"><img width="20" height=auto alt="Donate" src="https://windowslogic.co.uk/img/donate.png"> Donate</a> towards my projets.
