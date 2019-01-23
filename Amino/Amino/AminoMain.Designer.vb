@@ -43,6 +43,7 @@ Partial Class AminoMain
         Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.JoinButton = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -62,7 +63,7 @@ Partial Class AminoMain
         'ToolStrip1
         '
         Me.ToolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BackButton, Me.ForwardButton, Me.RefreshButton, Me.ToolStripSeparator1, Me.ExploreButton, Me.JumpButton, Me.ToolStripSeparator2, Me.ToolStripDropDownButton1, Me.JoinButton})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BackButton, Me.ForwardButton, Me.RefreshButton, Me.ToolStripSeparator1, Me.ExploreButton, Me.ToolStripButton1, Me.JumpButton, Me.ToolStripSeparator2, Me.ToolStripDropDownButton1, Me.JoinButton})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
@@ -217,6 +218,15 @@ Partial Class AminoMain
         Me.JoinButton.ToolTipText = "Join a community which bases itself on free speech, laughs, friendship and any to" &
     "pic you can think of. "
         '
+        'ToolStripButton1
+        '
+        Me.ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
+        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton1.Name = "ToolStripButton1"
+        Me.ToolStripButton1.Size = New System.Drawing.Size(23, 36)
+        Me.ToolStripButton1.Text = "Search"
+        '
         'AminoMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -228,7 +238,7 @@ Partial Class AminoMain
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MinimumSize = New System.Drawing.Size(800, 600)
         Me.Name = "AminoMain"
-        Me.Text = "Amino™ For Desktop"
+        Me.Text = "Amino For Desktop"
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
         Me.ResumeLayout(False)
@@ -256,4 +266,5 @@ Partial Class AminoMain
     Friend WithEvents CheckForUpdatesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
     Friend WithEvents JumpButton As ToolStripButton
+    Friend WithEvents ToolStripButton1 As ToolStripButton
 End Class

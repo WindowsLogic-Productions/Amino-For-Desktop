@@ -118,7 +118,7 @@ Partial Class AminoAbout
         Me.MinimizeBox = False
         Me.Name = "AminoAbout"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "About"
+        Me.Text = "About Amino For Desktop"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()

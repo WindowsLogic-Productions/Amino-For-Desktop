@@ -75,3 +75,4 @@ C:\GitHub\Amino-For-Desktop\Amino\Amino\obj\x86\Debug\Amino.vbproj.CopyComplete
 C:\GitHub\Amino-For-Desktop\Amino\Amino\obj\x86\Debug\Amino.exe
 C:\GitHub\Amino-For-Desktop\Amino\Amino\obj\x86\Debug\Amino.xml
 C:\GitHub\Amino-For-Desktop\Amino\Amino\obj\x86\Debug\Amino.pdb
+F:\GitHub\Amino-For-Desktop\Amino\Amino\obj\x86\Debug\Amino.AminoJump.resources
