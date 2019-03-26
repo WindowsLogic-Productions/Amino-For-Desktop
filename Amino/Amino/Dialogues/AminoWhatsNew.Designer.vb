@@ -37,7 +37,7 @@ Partial Class AminoWhatsNew
         Me.ListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.ListBox1.ForeColor = System.Drawing.Color.White
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Items.AddRange(New Object() {"~Version 2.0.0.0~", "1. Added 'Jump To...' which allows users to jump to Aminos via ID.", "2. Added 'Search' which allows users to search for Aminos.", "", "~Version 1.0.0.0~", "1. Initial release.", "2. Browse Amino and chat with friends on your PC."})
+        Me.ListBox1.Items.AddRange(New Object() {"~Version 2.0.0.0~", "1. Added 'Jump To...' which allows users to jump to Aminos via ID.", "2. Added 'Search' which allows users to search for Amino communities or topics.", "3. Updated Interest Avenue icon and link.", "4. Added 'About - More...' dialogue.", "5. ", "", "~Version 1.0.0.0~", "1. Initial release.", "2. Browse Amino and chat with friends on your PC."})
         Me.ListBox1.Location = New System.Drawing.Point(0, 52)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(531, 312)
@@ -88,8 +88,10 @@ Partial Class AminoWhatsNew
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "AminoWhatsNew"
+        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "What's New?"
+        Me.TopMost = True
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

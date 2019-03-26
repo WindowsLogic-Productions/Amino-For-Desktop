@@ -8,7 +8,7 @@
 
     Private Sub TweeterAbout_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        'Load version number and licence.
+        'Load version number and license.
         Variables.ParseVariables(VerInfo)
         Variables.ParseVariables(Copyright)
 
@@ -20,5 +20,9 @@
         AminoHelp.Text = "Software Agreement"
         AminoHelp.GeckoWebBrowser1.Navigate("https://windowslogic.co.uk/appagreement.php")
 
+    End Sub
+
+    Private Sub MoreButton_Click(sender As Object, e As EventArgs) Handles MoreButton.Click
+        Dedicate.ShowDialog()
     End Sub
 End Class

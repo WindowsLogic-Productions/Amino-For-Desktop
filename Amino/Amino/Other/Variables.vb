@@ -1,10 +1,10 @@
 ﻿Public Class Variables
 #Region "Shared Variables"
-    Public Shared ver As String = My.Application.Info.Version.ToString
+    Public Shared ver As String = My.Application.Info.Version.ToString + " (March 2019)"
     Public Shared user As String = System.Windows.Forms.SystemInformation.UserName
     Public Shared appname As String = "Amino™ For Desktop"
-    Public Shared vertext As String = "http://u.windowslogic.co.uk/AMINO/AMINO.txt"
-    Public Shared setup As String = "http://u.windowslogic.co.uk/AMINO/AminoForDesktop%20Setup.exe"
+    Public Shared vertext As String = "https://u.windowslogic.co.uk/AMINO/AMINO.txt"
+    Public Shared setup As String = "https://u.windowslogic.co.uk/AMINO/AminoForDesktop%20Setup.exe"
 
     Public Shared Sub ParseVariables(input As Label)
         input.Text = input.Text.Replace("%ver%", Variables.ver).Replace("%user%", Variables.user).Replace("%appname%", Variables.appname)
@@ -26,8 +26,8 @@
                 End If
 
             Catch
-                errordiag.ShowDialog()
                 errordiag.Label1.Text = "No connection to the update server."
+                errordiag.ShowDialog()
             End Try
         End If
 

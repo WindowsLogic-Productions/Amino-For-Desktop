@@ -25,13 +25,14 @@ Partial Class AminoMain
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AminoMain))
         Me.GeckoWebBrowser1 = New Gecko.GeckoWebBrowser()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.BackButton = New System.Windows.Forms.ToolStripButton()
         Me.ForwardButton = New System.Windows.Forms.ToolStripButton()
         Me.RefreshButton = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.ExploreButton = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.JumpButton = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripDropDownButton1 = New System.Windows.Forms.ToolStripDropDownButton()
         Me.SettingsPanelToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
@@ -43,7 +44,6 @@ Partial Class AminoMain
         Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.JoinButton = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -70,6 +70,16 @@ Partial Class AminoMain
         Me.ToolStrip1.Size = New System.Drawing.Size(946, 39)
         Me.ToolStrip1.TabIndex = 1
         Me.ToolStrip1.Text = "ToolStrip1"
+        '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 39)
+        '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 39)
         '
         'BackButton
         '
@@ -101,19 +111,23 @@ Partial Class AminoMain
         Me.RefreshButton.Size = New System.Drawing.Size(36, 36)
         Me.RefreshButton.Text = "Refresh"
         '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 39)
-        '
         'ExploreButton
         '
-        Me.ExploreButton.Image = Global.Amino.My.Resources.Resources.Search
+        Me.ExploreButton.Image = Global.Amino.My.Resources.Resources.Web_Studio
         Me.ExploreButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ExploreButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ExploreButton.Name = "ExploreButton"
         Me.ExploreButton.Size = New System.Drawing.Size(81, 36)
         Me.ExploreButton.Text = "Explore"
+        '
+        'ToolStripButton1
+        '
+        Me.ToolStripButton1.Image = Global.Amino.My.Resources.Resources.Search
+        Me.ToolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton1.Name = "ToolStripButton1"
+        Me.ToolStripButton1.Size = New System.Drawing.Size(78, 36)
+        Me.ToolStripButton1.Text = "Search"
         '
         'JumpButton
         '
@@ -123,11 +137,6 @@ Partial Class AminoMain
         Me.JumpButton.Name = "JumpButton"
         Me.JumpButton.Size = New System.Drawing.Size(97, 36)
         Me.JumpButton.Text = "Jump To..."
-        '
-        'ToolStripSeparator2
-        '
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 39)
         '
         'ToolStripDropDownButton1
         '
@@ -218,15 +227,6 @@ Partial Class AminoMain
         Me.JoinButton.ToolTipText = "Join a community which bases itself on free speech, laughs, friendship and any to" &
     "pic you can think of. "
         '
-        'ToolStripButton1
-        '
-        Me.ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
-        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton1.Name = "ToolStripButton1"
-        Me.ToolStripButton1.Size = New System.Drawing.Size(23, 36)
-        Me.ToolStripButton1.Text = "Search"
-        '
         'AminoMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -238,7 +238,7 @@ Partial Class AminoMain
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MinimumSize = New System.Drawing.Size(800, 600)
         Me.Name = "AminoMain"
-        Me.Text = "Amino For Desktop"
+        Me.Text = "Amino™ For Desktop"
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
         Me.ResumeLayout(False)

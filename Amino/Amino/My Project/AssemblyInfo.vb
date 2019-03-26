@@ -8,12 +8,12 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Amino For Desktop")>
+<Assembly: AssemblyTitle("Amino™ For Desktop")>
 <Assembly: AssemblyDescription("A small application for using Amino on your x86/x64 Windows Vista, 7, 8.1 and 10 computer.")>
 <Assembly: AssemblyCompany("WindowsLogic")>
-<Assembly: AssemblyProduct("Amino For Desktop")>
-<Assembly: AssemblyCopyright("Copyright © 2018 Timothy Iles (WindowsLogic).")>
-<Assembly: AssemblyTrademark("Amino For Desktop")>
+<Assembly: AssemblyProduct("Amino™ For Desktop")>
+<Assembly: AssemblyCopyright("Copyright © 2018 - 2019 Timothy Iles (WindowsLogic).")>
+<Assembly: AssemblyTrademark("Amino™ For Desktop")>
 
 <Assembly: ComVisible(False)>
 

@@ -75,7 +75,7 @@ Public Class AminoMain
     End Sub
 
     Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click
-        GeckoWebBrowser1.Navigate("https://cse.google.com/cse?cx=008199921705839589650:hxspkdrmf8m")
+        AminoSearch.ShowDialog()
     End Sub
 
 #End Region
