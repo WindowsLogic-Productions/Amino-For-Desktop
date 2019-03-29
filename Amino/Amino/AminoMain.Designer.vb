@@ -155,20 +155,20 @@ Partial Class AminoMain
         Me.SettingsPanelToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.SettingsPanelToolStripMenuItem.Name = "SettingsPanelToolStripMenuItem"
         Me.SettingsPanelToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.SettingsPanelToolStripMenuItem.Size = New System.Drawing.Size(200, 38)
+        Me.SettingsPanelToolStripMenuItem.Size = New System.Drawing.Size(247, 38)
         Me.SettingsPanelToolStripMenuItem.Text = "Settings Panel"
         '
         'ToolStripSeparator5
         '
         Me.ToolStripSeparator5.Name = "ToolStripSeparator5"
-        Me.ToolStripSeparator5.Size = New System.Drawing.Size(197, 6)
+        Me.ToolStripSeparator5.Size = New System.Drawing.Size(244, 6)
         '
         'WhatsNewToolStripMenuItem
         '
         Me.WhatsNewToolStripMenuItem.Image = Global.Amino.My.Resources.Resources.Changes
         Me.WhatsNewToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.WhatsNewToolStripMenuItem.Name = "WhatsNewToolStripMenuItem"
-        Me.WhatsNewToolStripMenuItem.Size = New System.Drawing.Size(200, 38)
+        Me.WhatsNewToolStripMenuItem.Size = New System.Drawing.Size(247, 38)
         Me.WhatsNewToolStripMenuItem.Text = "What's new?"
         '
         'CheckForUpdatesToolStripMenuItem
@@ -176,13 +176,13 @@ Partial Class AminoMain
         Me.CheckForUpdatesToolStripMenuItem.Image = Global.Amino.My.Resources.Resources.Update
         Me.CheckForUpdatesToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.CheckForUpdatesToolStripMenuItem.Name = "CheckForUpdatesToolStripMenuItem"
-        Me.CheckForUpdatesToolStripMenuItem.Size = New System.Drawing.Size(200, 38)
+        Me.CheckForUpdatesToolStripMenuItem.Size = New System.Drawing.Size(247, 38)
         Me.CheckForUpdatesToolStripMenuItem.Text = "Check for updates..."
         '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(197, 6)
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(244, 6)
         '
         'HelpToolStripMenuItem
         '
@@ -190,7 +190,7 @@ Partial Class AminoMain
         Me.HelpToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
         Me.HelpToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(200, 38)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(247, 38)
         Me.HelpToolStripMenuItem.Text = "Help"
         '
         'AboutToolStripMenuItem
@@ -199,13 +199,13 @@ Partial Class AminoMain
         Me.AboutToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
         Me.AboutToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F2
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(200, 38)
-        Me.AboutToolStripMenuItem.Text = "About"
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(247, 38)
+        Me.AboutToolStripMenuItem.Text = "About Amino For Desktop"
         '
         'ToolStripSeparator4
         '
         Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-        Me.ToolStripSeparator4.Size = New System.Drawing.Size(197, 6)
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(244, 6)
         '
         'ExitToolStripMenuItem
         '
@@ -213,7 +213,7 @@ Partial Class AminoMain
         Me.ExitToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
         Me.ExitToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.F4), System.Windows.Forms.Keys)
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(200, 38)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(247, 38)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'JoinButton
