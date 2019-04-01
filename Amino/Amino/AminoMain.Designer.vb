@@ -25,14 +25,14 @@ Partial Class AminoMain
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AminoMain))
         Me.GeckoWebBrowser1 = New Gecko.GeckoWebBrowser()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.BackButton = New System.Windows.Forms.ToolStripButton()
         Me.ForwardButton = New System.Windows.Forms.ToolStripButton()
         Me.RefreshButton = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.ExploreButton = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.JumpButton = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripDropDownButton1 = New System.Windows.Forms.ToolStripDropDownButton()
         Me.SettingsPanelToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
@@ -71,6 +71,16 @@ Partial Class AminoMain
         Me.ToolStrip1.TabIndex = 1
         Me.ToolStrip1.Text = "ToolStrip1"
         '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 39)
+        '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 39)
+        '
         'BackButton
         '
         Me.BackButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
@@ -101,11 +111,6 @@ Partial Class AminoMain
         Me.RefreshButton.Size = New System.Drawing.Size(36, 36)
         Me.RefreshButton.Text = "Refresh"
         '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 39)
-        '
         'ExploreButton
         '
         Me.ExploreButton.Image = Global.Amino.My.Resources.Resources.Web_Studio
@@ -133,11 +138,6 @@ Partial Class AminoMain
         Me.JumpButton.Size = New System.Drawing.Size(97, 36)
         Me.JumpButton.Text = "Jump To..."
         '
-        'ToolStripSeparator2
-        '
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 39)
-        '
         'ToolStripDropDownButton1
         '
         Me.ToolStripDropDownButton1.BackColor = System.Drawing.SystemColors.Control
@@ -155,20 +155,20 @@ Partial Class AminoMain
         Me.SettingsPanelToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.SettingsPanelToolStripMenuItem.Name = "SettingsPanelToolStripMenuItem"
         Me.SettingsPanelToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.SettingsPanelToolStripMenuItem.Size = New System.Drawing.Size(247, 38)
+        Me.SettingsPanelToolStripMenuItem.Size = New System.Drawing.Size(265, 38)
         Me.SettingsPanelToolStripMenuItem.Text = "Settings Panel"
         '
         'ToolStripSeparator5
         '
         Me.ToolStripSeparator5.Name = "ToolStripSeparator5"
-        Me.ToolStripSeparator5.Size = New System.Drawing.Size(244, 6)
+        Me.ToolStripSeparator5.Size = New System.Drawing.Size(262, 6)
         '
         'WhatsNewToolStripMenuItem
         '
         Me.WhatsNewToolStripMenuItem.Image = Global.Amino.My.Resources.Resources.Changes
         Me.WhatsNewToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.WhatsNewToolStripMenuItem.Name = "WhatsNewToolStripMenuItem"
-        Me.WhatsNewToolStripMenuItem.Size = New System.Drawing.Size(247, 38)
+        Me.WhatsNewToolStripMenuItem.Size = New System.Drawing.Size(265, 38)
         Me.WhatsNewToolStripMenuItem.Text = "What's new?"
         '
         'CheckForUpdatesToolStripMenuItem
@@ -176,13 +176,13 @@ Partial Class AminoMain
         Me.CheckForUpdatesToolStripMenuItem.Image = Global.Amino.My.Resources.Resources.Update
         Me.CheckForUpdatesToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.CheckForUpdatesToolStripMenuItem.Name = "CheckForUpdatesToolStripMenuItem"
-        Me.CheckForUpdatesToolStripMenuItem.Size = New System.Drawing.Size(247, 38)
+        Me.CheckForUpdatesToolStripMenuItem.Size = New System.Drawing.Size(265, 38)
         Me.CheckForUpdatesToolStripMenuItem.Text = "Check for updates..."
         '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(244, 6)
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(262, 6)
         '
         'HelpToolStripMenuItem
         '
@@ -190,7 +190,7 @@ Partial Class AminoMain
         Me.HelpToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
         Me.HelpToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(247, 38)
+        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(265, 38)
         Me.HelpToolStripMenuItem.Text = "Help"
         '
         'AboutToolStripMenuItem
@@ -199,13 +199,13 @@ Partial Class AminoMain
         Me.AboutToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
         Me.AboutToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F2
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(247, 38)
-        Me.AboutToolStripMenuItem.Text = "About Amino For Desktop"
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(265, 38)
+        Me.AboutToolStripMenuItem.Text = "About Amino™ For Desktop..."
         '
         'ToolStripSeparator4
         '
         Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-        Me.ToolStripSeparator4.Size = New System.Drawing.Size(244, 6)
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(262, 6)
         '
         'ExitToolStripMenuItem
         '
@@ -213,19 +213,19 @@ Partial Class AminoMain
         Me.ExitToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
         Me.ExitToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.F4), System.Windows.Forms.Keys)
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(247, 38)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(265, 38)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'JoinButton
         '
-        Me.JoinButton.Image = Global.Amino.My.Resources.Resources.windowslogic
+        Me.JoinButton.Image = Global.Amino.My.Resources.Resources.INAV
         Me.JoinButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.JoinButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.JoinButton.Name = "JoinButton"
-        Me.JoinButton.Size = New System.Drawing.Size(149, 36)
-        Me.JoinButton.Text = "Join Interest Avenue"
-        Me.JoinButton.ToolTipText = "Join a community which bases itself on free speech, laughs, friendship and any to" &
-    "pic you can think of. "
+        Me.JoinButton.Size = New System.Drawing.Size(167, 36)
+        Me.JoinButton.Text = "Join Interest Avenue 2.0"
+        Me.JoinButton.ToolTipText = "Join a community which bases itself on interests, free speech," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "laughs, friendshi" &
+    "p and any topic you can think of. "
         '
         'AminoMain
         '

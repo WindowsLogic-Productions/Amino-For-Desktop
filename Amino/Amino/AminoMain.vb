@@ -78,9 +78,9 @@ Public Class AminoMain
         AminoSearch.ShowDialog()
     End Sub
 
-    Private Sub GeckoWebBrowser1_Navigated(sender As Object, e As GeckoNavigatedEventArgs) Handles GeckoWebBrow
-
-    nd Sub()
+    Private Sub GeckoWebBrowser1_Navigated(sender As Object, e As GeckoNavigatedEventArgs) Handles GeckoWebBrowser1.Navigated
+        Me.Text = GeckoWebBrowser1.
+    End Sub
 
 #End Region
 End Class
