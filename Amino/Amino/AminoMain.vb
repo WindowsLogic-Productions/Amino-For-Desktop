@@ -78,8 +78,8 @@ Public Class AminoMain
         AminoSearch.ShowDialog()
     End Sub
 
-    Private Sub GeckoWebBrowser1_Navigated(sender As Object, e As GeckoNavigatedEventArgs) Handles GeckoWebBrowser1.Navigated
-        Me.Text = GeckoWebBrowser1.
+    Private Sub GeckoWebBrowser1_DocumentCompleted(sender As Object, e As Events.GeckoDocumentCompletedEventArgs) Handles GeckoWebBrowser1.DocumentCompleted
+        Me.Text = GeckoWebBrowser1.DocumentTitle & " - Amino™ For Desktop"
     End Sub
 
 #End Region

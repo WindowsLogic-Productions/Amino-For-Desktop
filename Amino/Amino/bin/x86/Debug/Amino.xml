@@ -62,6 +62,11 @@ Amino
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Amino.My.Resources.Resources.INAV">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Amino.My.Resources.Resources.Information">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
