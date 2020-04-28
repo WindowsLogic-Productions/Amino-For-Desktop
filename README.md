@@ -14,7 +14,7 @@ Download the latest version of Amino for Desktop on the [Releases](https://githu
 Use the issues tab on this GitHub page to notify me of bugs and such. All support will be handled through here.
 
 # Copyright
-All code is Copyright © 2018 - 2019 Timothy Iles (WindowsLogic).
+All code is Copyright © 2018 - 2020 WindowsLogic Productions.
 
 # Donate
 Share the love and <a href="https://paypal.me/windowslogic"><img width="20" height=auto alt="Donate" src="https://windowslogic.co.uk/img/donate.png"> Donate</a> towards my projects.
