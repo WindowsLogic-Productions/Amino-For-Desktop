@@ -24,21 +24,15 @@ Partial Class AminoMain
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AminoMain))
-        Me.GeckoWebBrowser1 = New Gecko.GeckoWebBrowser()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.SysTrayIcon = New System.Windows.Forms.NotifyIcon(Me.components)
-        Me.SysTrayMenu = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.ToolStripSeparator7 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
         Me.BackButton = New System.Windows.Forms.ToolStripButton()
         Me.ForwardButton = New System.Windows.Forms.ToolStripButton()
         Me.RefreshButton = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.ExploreButton = New System.Windows.Forms.ToolStripButton()
         Me.SearchButton = New System.Windows.Forms.ToolStripButton()
         Me.JumpButton = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.AppButton = New System.Windows.Forms.ToolStripDropDownButton()
         Me.SettingsPanelToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
@@ -49,29 +43,22 @@ Partial Class AminoMain
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SignOutButton = New System.Windows.Forms.ToolStripButton()
-        Me.RestoreToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SettingsPanelToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProfileButton = New System.Windows.Forms.ToolStripSplitButton()
         Me.FollowersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FollowingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SignOutButton = New System.Windows.Forms.ToolStripButton()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.SysTrayIcon = New System.Windows.Forms.NotifyIcon(Me.components)
+        Me.SysTrayMenu = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.RestoreToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator7 = New System.Windows.Forms.ToolStripSeparator()
+        Me.SettingsPanelToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GeckoWebBrowser1 = New Gecko.GeckoWebBrowser()
         Me.ToolStrip1.SuspendLayout()
         Me.SysTrayMenu.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'GeckoWebBrowser1
-        '
-        Me.GeckoWebBrowser1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GeckoWebBrowser1.ConsoleMessageEventReceivesConsoleLogCalls = True
-        Me.GeckoWebBrowser1.FrameEventsPropagateToMainWindow = False
-        Me.GeckoWebBrowser1.Location = New System.Drawing.Point(0, 39)
-        Me.GeckoWebBrowser1.Name = "GeckoWebBrowser1"
-        Me.GeckoWebBrowser1.Size = New System.Drawing.Size(946, 549)
-        Me.GeckoWebBrowser1.TabIndex = 0
-        Me.GeckoWebBrowser1.UseHttpActivityObserver = False
         '
         'ToolStrip1
         '
@@ -83,46 +70,6 @@ Partial Class AminoMain
         Me.ToolStrip1.Size = New System.Drawing.Size(946, 39)
         Me.ToolStrip1.TabIndex = 1
         Me.ToolStrip1.Text = "ToolStrip1"
-        '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 39)
-        '
-        'ToolStripSeparator2
-        '
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 39)
-        '
-        'Timer1
-        '
-        Me.Timer1.Enabled = True
-        Me.Timer1.Interval = 50
-        '
-        'SysTrayIcon
-        '
-        Me.SysTrayIcon.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info
-        Me.SysTrayIcon.ContextMenuStrip = Me.SysTrayMenu
-        Me.SysTrayIcon.Icon = CType(resources.GetObject("SysTrayIcon.Icon"), System.Drawing.Icon)
-        Me.SysTrayIcon.Text = "Amino For Desktop"
-        Me.SysTrayIcon.Visible = True
-        '
-        'SysTrayMenu
-        '
-        Me.SysTrayMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RestoreToolStripMenuItem, Me.ToolStripSeparator7, Me.SettingsPanelToolStripMenuItem1, Me.ToolStripSeparator6, Me.ExitToolStripMenuItem1})
-        Me.SysTrayMenu.Name = "ContextMenuStrip1"
-        Me.SysTrayMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.SysTrayMenu.Size = New System.Drawing.Size(165, 130)
-        '
-        'ToolStripSeparator7
-        '
-        Me.ToolStripSeparator7.Name = "ToolStripSeparator7"
-        Me.ToolStripSeparator7.Size = New System.Drawing.Size(161, 6)
-        '
-        'ToolStripSeparator6
-        '
-        Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
-        Me.ToolStripSeparator6.Size = New System.Drawing.Size(161, 6)
         '
         'BackButton
         '
@@ -154,6 +101,11 @@ Partial Class AminoMain
         Me.RefreshButton.Size = New System.Drawing.Size(36, 36)
         Me.RefreshButton.Text = "Refresh"
         '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 39)
+        '
         'ExploreButton
         '
         Me.ExploreButton.Image = Global.Amino.My.Resources.Resources.Web_Studio
@@ -181,6 +133,11 @@ Partial Class AminoMain
         Me.JumpButton.Name = "JumpButton"
         Me.JumpButton.Size = New System.Drawing.Size(97, 36)
         Me.JumpButton.Text = "Jump To..."
+        '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 39)
         '
         'AppButton
         '
@@ -260,39 +217,6 @@ Partial Class AminoMain
         Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(256, 38)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
-        'SignOutButton
-        '
-        Me.SignOutButton.Image = CType(resources.GetObject("SignOutButton.Image"), System.Drawing.Image)
-        Me.SignOutButton.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.SignOutButton.Name = "SignOutButton"
-        Me.SignOutButton.Size = New System.Drawing.Size(73, 36)
-        Me.SignOutButton.Text = "Sign Out"
-        Me.SignOutButton.ToolTipText = "Sign out of your Amino account."
-        '
-        'RestoreToolStripMenuItem
-        '
-        Me.RestoreToolStripMenuItem.Image = Global.Amino.My.Resources.Resources.Restore
-        Me.RestoreToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.RestoreToolStripMenuItem.Name = "RestoreToolStripMenuItem"
-        Me.RestoreToolStripMenuItem.Size = New System.Drawing.Size(164, 38)
-        Me.RestoreToolStripMenuItem.Text = "Restore"
-        '
-        'SettingsPanelToolStripMenuItem1
-        '
-        Me.SettingsPanelToolStripMenuItem1.Image = Global.Amino.My.Resources.Resources.Settings
-        Me.SettingsPanelToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.SettingsPanelToolStripMenuItem1.Name = "SettingsPanelToolStripMenuItem1"
-        Me.SettingsPanelToolStripMenuItem1.Size = New System.Drawing.Size(164, 38)
-        Me.SettingsPanelToolStripMenuItem1.Text = "Settings Panel"
-        '
-        'ExitToolStripMenuItem1
-        '
-        Me.ExitToolStripMenuItem1.Image = Global.Amino.My.Resources.Resources.ExitIco
-        Me.ExitToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
-        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(164, 38)
-        Me.ExitToolStripMenuItem1.Text = "Exit"
-        '
         'ProfileButton
         '
         Me.ProfileButton.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FollowersToolStripMenuItem, Me.FollowingToolStripMenuItem})
@@ -308,12 +232,89 @@ Partial Class AminoMain
         Me.FollowersToolStripMenuItem.Name = "FollowersToolStripMenuItem"
         Me.FollowersToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.FollowersToolStripMenuItem.Text = "Followers"
+        Me.FollowersToolStripMenuItem.Visible = False
         '
         'FollowingToolStripMenuItem
         '
         Me.FollowingToolStripMenuItem.Name = "FollowingToolStripMenuItem"
         Me.FollowingToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.FollowingToolStripMenuItem.Text = "Following"
+        '
+        'SignOutButton
+        '
+        Me.SignOutButton.Image = CType(resources.GetObject("SignOutButton.Image"), System.Drawing.Image)
+        Me.SignOutButton.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.SignOutButton.Name = "SignOutButton"
+        Me.SignOutButton.Size = New System.Drawing.Size(73, 36)
+        Me.SignOutButton.Text = "Sign Out"
+        Me.SignOutButton.ToolTipText = "Sign out of your Amino account."
+        '
+        'Timer1
+        '
+        Me.Timer1.Enabled = True
+        Me.Timer1.Interval = 50
+        '
+        'SysTrayIcon
+        '
+        Me.SysTrayIcon.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info
+        Me.SysTrayIcon.ContextMenuStrip = Me.SysTrayMenu
+        Me.SysTrayIcon.Icon = CType(resources.GetObject("SysTrayIcon.Icon"), System.Drawing.Icon)
+        Me.SysTrayIcon.Text = "Amino For Desktop"
+        Me.SysTrayIcon.Visible = True
+        '
+        'SysTrayMenu
+        '
+        Me.SysTrayMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RestoreToolStripMenuItem, Me.ToolStripSeparator7, Me.SettingsPanelToolStripMenuItem1, Me.ToolStripSeparator6, Me.ExitToolStripMenuItem1})
+        Me.SysTrayMenu.Name = "ContextMenuStrip1"
+        Me.SysTrayMenu.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
+        Me.SysTrayMenu.Size = New System.Drawing.Size(165, 130)
+        '
+        'RestoreToolStripMenuItem
+        '
+        Me.RestoreToolStripMenuItem.Image = Global.Amino.My.Resources.Resources.Restore
+        Me.RestoreToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.RestoreToolStripMenuItem.Name = "RestoreToolStripMenuItem"
+        Me.RestoreToolStripMenuItem.Size = New System.Drawing.Size(164, 38)
+        Me.RestoreToolStripMenuItem.Text = "Restore"
+        '
+        'ToolStripSeparator7
+        '
+        Me.ToolStripSeparator7.Name = "ToolStripSeparator7"
+        Me.ToolStripSeparator7.Size = New System.Drawing.Size(161, 6)
+        '
+        'SettingsPanelToolStripMenuItem1
+        '
+        Me.SettingsPanelToolStripMenuItem1.Image = Global.Amino.My.Resources.Resources.Settings
+        Me.SettingsPanelToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.SettingsPanelToolStripMenuItem1.Name = "SettingsPanelToolStripMenuItem1"
+        Me.SettingsPanelToolStripMenuItem1.Size = New System.Drawing.Size(164, 38)
+        Me.SettingsPanelToolStripMenuItem1.Text = "Settings Panel"
+        '
+        'ToolStripSeparator6
+        '
+        Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
+        Me.ToolStripSeparator6.Size = New System.Drawing.Size(161, 6)
+        '
+        'ExitToolStripMenuItem1
+        '
+        Me.ExitToolStripMenuItem1.Image = Global.Amino.My.Resources.Resources.ExitIco
+        Me.ExitToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
+        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(164, 38)
+        Me.ExitToolStripMenuItem1.Text = "Exit"
+        '
+        'GeckoWebBrowser1
+        '
+        Me.GeckoWebBrowser1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GeckoWebBrowser1.ConsoleMessageEventReceivesConsoleLogCalls = True
+        Me.GeckoWebBrowser1.FrameEventsPropagateToMainWindow = False
+        Me.GeckoWebBrowser1.Location = New System.Drawing.Point(0, 39)
+        Me.GeckoWebBrowser1.Name = "GeckoWebBrowser1"
+        Me.GeckoWebBrowser1.Size = New System.Drawing.Size(946, 549)
+        Me.GeckoWebBrowser1.TabIndex = 0
+        Me.GeckoWebBrowser1.UseHttpActivityObserver = False
         '
         'AminoMain
         '
@@ -334,8 +335,6 @@ Partial Class AminoMain
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents GeckoWebBrowser1 As Gecko.GeckoWebBrowser
     Friend WithEvents ToolStrip1 As ToolStrip
     Friend WithEvents BackButton As ToolStripButton
     Friend WithEvents ForwardButton As ToolStripButton
@@ -367,4 +366,5 @@ Partial Class AminoMain
     Friend WithEvents ProfileButton As ToolStripSplitButton
     Friend WithEvents FollowersToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents FollowingToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents GeckoWebBrowser1 As Gecko.GeckoWebBrowser
 End Class

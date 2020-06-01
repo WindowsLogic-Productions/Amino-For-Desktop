@@ -95,6 +95,12 @@
         Me.Close()
     End Sub
 
+    Private Sub FollowCheckBox_CheckedChanged(sender As Object, e As EventArgs) Handles FollowCheckBox.CheckedChanged
+        If FollowCheckBox.Checked = True Then
+
+        End If
+    End Sub
+
 
 #End Region
 End Class
