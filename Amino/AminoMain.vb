@@ -21,6 +21,15 @@ Public Class AminoMain
 
         'Load update settings.
         Variables.Update_Settings()
+
+        'Load Followers/Following menu settings.
+        If My.Settings.Follower = 0 Then
+            FollowersToolStripMenuItem.Visible = False
+            FollowingToolStripMenuItem.Visible = False
+        Else
+            FollowersToolStripMenuItem.Visible = True
+            FollowingToolStripMenuItem.Visible = True
+        End If
     End Sub
 #End Region
 #Region "System Tray"
@@ -151,6 +160,18 @@ Public Class AminoMain
 
     Private Sub FollowersToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FollowersToolStripMenuItem.Click
         GeckoWebBrowser1.Navigate("https://aminoapps.com/u/" + My.Settings.ProfileName + "/followers")
+    End Sub
+
+    Private Sub FollowingToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FollowingToolStripMenuItem.Click
+        GeckoWebBrowser1.Navigate("https://aminoapps.com/u/" + My.Settings.ProfileName + "/following")
+    End Sub
+
+    Private Sub SignOutButton_Click(sender As Object, e As EventArgs) Handles SignOutButton.Click
+        Dim CookieMan As nsICookieManager
+        CookieMan = Xpcom.GetService(Of nsICookieManager)("@mozilla.org/cookiemanager;1")
+        CookieMan = Xpcom.QueryInterface(Of nsICookieManager)(CookieMan)
+        CookieMan.RemoveAll()
+        GeckoWebBrowser1.Reload()
     End Sub
 #End Region
 End Class

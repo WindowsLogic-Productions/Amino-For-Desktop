@@ -97,9 +97,9 @@ Partial Class SettingsPanelGeneral
         Me.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BackButton.ForeColor = System.Drawing.Color.White
         Me.BackButton.Image = Global.Amino.My.Resources.Resources.Back
-        Me.BackButton.Location = New System.Drawing.Point(12, 9)
+        Me.BackButton.Location = New System.Drawing.Point(3, 3)
         Me.BackButton.Name = "BackButton"
-        Me.BackButton.Size = New System.Drawing.Size(36, 36)
+        Me.BackButton.Size = New System.Drawing.Size(48, 48)
         Me.BackButton.TabIndex = 15
         Me.ToolTip1.SetToolTip(Me.BackButton, "Back to Settings Panel.")
         Me.BackButton.UseVisualStyleBackColor = True

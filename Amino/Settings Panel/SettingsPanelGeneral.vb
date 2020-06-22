@@ -18,7 +18,7 @@
             FullScreenBox.Checked = True
         End If
 
-        'Load One-Click global profile access.
+        'Load one-click global profile access.
         If My.Settings.OCA = 0 Then
             GPText.Text = "No Global Profile Set"
         Else
@@ -34,15 +34,15 @@
         End If
 
         'Load start-up settings.
-        If My.Settings.Follower = 0 Then
+        If My.Settings.Startup = 0 Then
             NothingButton.Checked = True
         End If
 
-        If My.Settings.Follower = 1 Then
+        If My.Settings.Startup = 1 Then
             SystemTrayButton.Checked = True
         End If
 
-        If My.Settings.Follower = 2 Then
+        If My.Settings.Startup = 2 Then
             SettingsPanelButton.Checked = True
         End If
     End Sub
@@ -96,11 +96,22 @@
     End Sub
 
     Private Sub FollowCheckBox_CheckedChanged(sender As Object, e As EventArgs) Handles FollowCheckBox.CheckedChanged
-        If FollowCheckBox.Checked = True Then
-
+        If FollowCheckBox.Checked = False Then
+            My.Settings.Follower = 0
+            AminoMain.FollowersToolStripMenuItem.Visible = False
+            AminoMain.FollowingToolStripMenuItem.Visible = False
+            My.Settings.Save()
         End If
-    End Sub
 
+        If FollowCheckBox.Checked = True Then
+            My.Settings.Follower = 1
+            AminoMain.FollowersToolStripMenuItem.Visible = True
+            AminoMain.FollowingToolStripMenuItem.Visible = True
+            My.Settings.Save()
+        End If
+
+
+    End Sub
 
 #End Region
 End Class

@@ -225,7 +225,7 @@ Partial Class AminoMain
         Me.ProfileButton.Name = "ProfileButton"
         Me.ProfileButton.Size = New System.Drawing.Size(110, 36)
         Me.ProfileButton.Text = "Global Profile"
-        Me.ProfileButton.ToolTipText = "Go to your global profile or click the drop-down for more options."
+        Me.ProfileButton.ToolTipText = "Go to your global profile or click the drop-down for more options (if enabled)."
         '
         'FollowersToolStripMenuItem
         '
@@ -239,6 +239,7 @@ Partial Class AminoMain
         Me.FollowingToolStripMenuItem.Name = "FollowingToolStripMenuItem"
         Me.FollowingToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.FollowingToolStripMenuItem.Text = "Following"
+        Me.FollowingToolStripMenuItem.Visible = False
         '
         'SignOutButton
         '
