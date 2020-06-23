@@ -45,6 +45,13 @@
         If My.Settings.Startup = 2 Then
             SettingsPanelButton.Checked = True
         End If
+
+        'Load topic search settings.
+        If My.Settings.Search = 0 Then
+            TopicSearchCheckBox.Checked = False
+        Else
+            TopicSearchCheckBox.Checked = True
+        End If
     End Sub
 #End Region
 #Region "Amino"
@@ -111,6 +118,18 @@
         End If
 
 
+    End Sub
+
+    Private Sub TopicSearchCheckBox_CheckedChanged(sender As Object, e As EventArgs) Handles TopicSearchCheckBox.CheckedChanged
+        If TopicSearchCheckBox.Checked = False Then
+            AminoMain.SearchButton.Visible = False
+            My.Settings.Search = 0
+            My.Settings.Save()
+        Else
+            AminoMain.SearchButton.Visible = True
+            My.Settings.Search = 1
+            My.Settings.Save()
+        End If
     End Sub
 
 #End Region
