@@ -205,6 +205,18 @@
     <Compile Include="Settings Panel\SettingsPanelGeneral.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SettingsPanelPersonalise.Designer.vb">
+      <DependentUpon>SettingsPanelPersonalise.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsPanelPersonalise.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsPanelUpdates.Designer.vb">
+      <DependentUpon>SettingsPanelUpdates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsPanelUpdates.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AminoHelp.resx">
@@ -251,6 +263,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Settings Panel\SettingsPanelGeneral.resx">
       <DependentUpon>SettingsPanelGeneral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsPanelPersonalise.resx">
+      <DependentUpon>SettingsPanelPersonalise.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsPanelUpdates.resx">
+      <DependentUpon>SettingsPanelUpdates.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
