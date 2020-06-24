@@ -219,11 +219,12 @@ Partial Class AminoMain
         '
         'ProfileButton
         '
+        Me.ProfileButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
         Me.ProfileButton.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FollowersToolStripMenuItem, Me.FollowingToolStripMenuItem})
         Me.ProfileButton.Image = Global.Amino.My.Resources.Resources.Information
         Me.ProfileButton.MergeAction = System.Windows.Forms.MergeAction.Replace
         Me.ProfileButton.Name = "ProfileButton"
-        Me.ProfileButton.Size = New System.Drawing.Size(110, 36)
+        Me.ProfileButton.Size = New System.Drawing.Size(94, 36)
         Me.ProfileButton.Text = "Global Profile"
         Me.ProfileButton.ToolTipText = "Go to your global profile or click the drop-down for more options (if enabled)."
         '
@@ -243,10 +244,11 @@ Partial Class AminoMain
         '
         'SignOutButton
         '
+        Me.SignOutButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
         Me.SignOutButton.Image = CType(resources.GetObject("SignOutButton.Image"), System.Drawing.Image)
         Me.SignOutButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.SignOutButton.Name = "SignOutButton"
-        Me.SignOutButton.Size = New System.Drawing.Size(73, 36)
+        Me.SignOutButton.Size = New System.Drawing.Size(57, 36)
         Me.SignOutButton.Text = "Sign Out"
         Me.SignOutButton.ToolTipText = "Sign out of your Amino account."
         '
