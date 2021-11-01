@@ -46,11 +46,11 @@ Partial Class Updater
         '
         Me.TitleText.AutoSize = True
         Me.TitleText.BackColor = System.Drawing.Color.Transparent
-        Me.TitleText.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TitleText.Font = New System.Drawing.Font("Segoe UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TitleText.ForeColor = System.Drawing.Color.White
         Me.TitleText.Location = New System.Drawing.Point(50, 13)
         Me.TitleText.Name = "TitleText"
-        Me.TitleText.Size = New System.Drawing.Size(457, 30)
+        Me.TitleText.Size = New System.Drawing.Size(456, 30)
         Me.TitleText.TabIndex = 20
         Me.TitleText.Text = "Your computer is preparing application updates."
         '
@@ -112,7 +112,7 @@ Partial Class Updater
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Image = Global.Amino.My.Resources.Resources.Okay
+        Me.PictureBox1.Image = Global.Amino.My.Resources.Resources.Updates_On
         Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(32, 32)

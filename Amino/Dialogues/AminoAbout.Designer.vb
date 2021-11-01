@@ -29,7 +29,6 @@ Partial Class AminoAbout
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Copyright = New System.Windows.Forms.Label()
         Me.OKButton = New System.Windows.Forms.Button()
-        Me.MoreButton = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -42,12 +41,12 @@ Partial Class AminoAbout
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(447, 53)
+        Me.Panel1.Size = New System.Drawing.Size(413, 53)
         Me.Panel1.TabIndex = 5
         '
         'PictureBox2
         '
-        Me.PictureBox2.Image = Global.Amino.My.Resources.Resources.Amino_V2
+        Me.PictureBox2.Image = Global.Amino.My.Resources.Resources.Amino
         Me.PictureBox2.Location = New System.Drawing.Point(12, 10)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(32, 32)
@@ -72,7 +71,7 @@ Partial Class AminoAbout
         Me.LinkLabel1.AutoSize = True
         Me.LinkLabel1.ForeColor = System.Drawing.Color.White
         Me.LinkLabel1.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel1.Location = New System.Drawing.Point(242, 107)
+        Me.LinkLabel1.Location = New System.Drawing.Point(230, 107)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(112, 13)
         Me.LinkLabel1.TabIndex = 7
@@ -84,32 +83,23 @@ Partial Class AminoAbout
         Me.Copyright.AutoSize = True
         Me.Copyright.BackColor = System.Drawing.Color.Transparent
         Me.Copyright.ForeColor = System.Drawing.Color.White
-        Me.Copyright.Location = New System.Drawing.Point(23, 69)
+        Me.Copyright.Location = New System.Drawing.Point(12, 69)
         Me.Copyright.Name = "Copyright"
-        Me.Copyright.Size = New System.Drawing.Size(392, 65)
+        Me.Copyright.Size = New System.Drawing.Size(389, 65)
         Me.Copyright.TabIndex = 6
         Me.Copyright.Text = resources.GetString("Copyright.Text")
         Me.Copyright.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'OKButton
         '
+        Me.OKButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.OKButton.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.OKButton.Location = New System.Drawing.Point(279, 138)
+        Me.OKButton.Location = New System.Drawing.Point(326, 147)
         Me.OKButton.Name = "OKButton"
         Me.OKButton.Size = New System.Drawing.Size(75, 23)
         Me.OKButton.TabIndex = 0
         Me.OKButton.Text = "OK"
         Me.OKButton.UseVisualStyleBackColor = True
-        '
-        'MoreButton
-        '
-        Me.MoreButton.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MoreButton.Location = New System.Drawing.Point(360, 138)
-        Me.MoreButton.Name = "MoreButton"
-        Me.MoreButton.Size = New System.Drawing.Size(75, 23)
-        Me.MoreButton.TabIndex = 1
-        Me.MoreButton.Text = "More..."
-        Me.MoreButton.UseVisualStyleBackColor = True
         '
         'AminoAbout
         '
@@ -117,8 +107,7 @@ Partial Class AminoAbout
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(447, 173)
-        Me.Controls.Add(Me.MoreButton)
+        Me.ClientSize = New System.Drawing.Size(413, 182)
         Me.Controls.Add(Me.OKButton)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Copyright)
@@ -129,9 +118,9 @@ Partial Class AminoAbout
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "AminoAbout"
+        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "About Amino™ For Desktop"
-        Me.TopMost = True
+        Me.Text = "About Amino For Desktop"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -146,5 +135,4 @@ Partial Class AminoAbout
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents Copyright As Label
     Friend WithEvents OKButton As Button
-    Friend WithEvents MoreButton As Button
 End Class
