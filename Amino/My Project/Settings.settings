@@ -26,5 +26,11 @@
     <Setting Name="Search" Type="System.String" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
+    <Setting Name="CustomColour" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">0, 138, 255</Value>
+    </Setting>
+    <Setting Name="CCE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

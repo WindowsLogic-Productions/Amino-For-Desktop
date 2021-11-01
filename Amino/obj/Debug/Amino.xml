@@ -37,12 +37,22 @@ Amino
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Amino.My.Resources.Resources.BadGradient">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Amino.My.Resources.Resources.Changes">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:Amino.My.Resources.Resources.CircleWarningIco">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Amino.My.Resources.Resources.Colours">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -82,6 +92,11 @@ Amino
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Amino.My.Resources.Resources.LogOut">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Amino.My.Resources.Resources.Minimise">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -93,6 +108,11 @@ Amino
 </summary>
 </member>
 <member name="P:Amino.My.Resources.Resources.Okay">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Amino.My.Resources.Resources.One_click">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -133,6 +153,21 @@ Amino
 </summary>
 </member>
 <member name="P:Amino.My.Resources.Resources.Update">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Amino.My.Resources.Resources.Updates_New">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Amino.My.Resources.Resources.Updates_Off">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Amino.My.Resources.Resources.Updates_On">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

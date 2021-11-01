@@ -8,7 +8,7 @@ Public Class AminoMain
         Xpcom.Initialize("Firefox")
 
 
-        Dim sUserAgent As String = "Mozilla/5.0 (Windows NT 4.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/76.0 (.NET CLR 3.5.30729)"
+        Dim sUserAgent As String = "Mozilla/5.0 (Windows NT 4.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/80.0 (.NET CLR 3.5.30729)"
         Gecko.GeckoPreferences.User("general.useragent.override") = sUserAgent
 
     End Sub
@@ -21,6 +21,13 @@ Public Class AminoMain
 
         'Load update settings.
         Variables.Update_Settings()
+
+        'Load topic search settings.
+        If My.Settings.Search = 0 Then
+            TSearchButton.Visible = False
+        Else
+            TSearchButton.Visible = True
+        End If
 
         'Load Followers/Following menu settings.
         If My.Settings.Follower = 0 Then
@@ -115,7 +122,8 @@ Public Class AminoMain
         AminoJump.ShowDialog()
     End Sub
 
-    Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles SearchButton.Click
+    Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles TSearchButton.Click
+        AminoSearch.Text = "Topic Search"
         AminoSearch.ShowDialog()
     End Sub
 
@@ -172,6 +180,12 @@ Public Class AminoMain
         CookieMan = Xpcom.QueryInterface(Of nsICookieManager)(CookieMan)
         CookieMan.RemoveAll()
         GeckoWebBrowser1.Reload()
+    End Sub
+
+    Private Sub USearchButton_Click(sender As Object, e As EventArgs) Handles USearchButton.Click
+        AminoSearch.Text = "User Search"
+        AminoSearch.Label2.Text = "Search for users..."
+        AminoSearch.ShowDialog()
     End Sub
 #End Region
 End Class

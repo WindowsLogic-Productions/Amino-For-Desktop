@@ -39,7 +39,7 @@ Partial Class UpdaterPrompt
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI Semilight", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label1.Location = New System.Drawing.Point(50, 13)
         Me.Label1.Name = "Label1"
@@ -70,7 +70,7 @@ Partial Class UpdaterPrompt
         Me.PostponeButton.Location = New System.Drawing.Point(392, 125)
         Me.PostponeButton.Name = "PostponeButton"
         Me.PostponeButton.Size = New System.Drawing.Size(79, 23)
-        Me.PostponeButton.TabIndex = 0
+        Me.PostponeButton.TabIndex = 1
         Me.PostponeButton.Text = "Postpone"
         Me.PostponeButton.UseVisualStyleBackColor = False
         '
@@ -90,13 +90,13 @@ Partial Class UpdaterPrompt
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(419, 26)
         Me.Label2.TabIndex = 0
-        Me.Label2.Text = "You are running an out of date copy of Amino™ For Desktop." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Updating provides you" &
-    " with new features, fixes and performance improvements."
+        Me.Label2.Text = "You are running an out of date copy of Amino For Desktop." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Updating provides you " &
+    "with new features, fixes and performance improvements."
         '
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Image = Global.Amino.My.Resources.Resources.CircleWarningIco
+        Me.PictureBox1.Image = Global.Amino.My.Resources.Resources.Updates_New
         Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(32, 32)

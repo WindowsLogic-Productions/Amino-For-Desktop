@@ -2,6 +2,11 @@
 #Region "Load Settings"
     Private Sub SettingsPanelGeneral_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        'Load personalisation settings.
+        If My.Settings.CCE = 1 Then
+            Me.BackColor = My.Settings.CustomColour
+        End If
+
         GPSetLabel.Visible = False
 
         'Load System Tray Minimise settings.
@@ -122,11 +127,11 @@
 
     Private Sub TopicSearchCheckBox_CheckedChanged(sender As Object, e As EventArgs) Handles TopicSearchCheckBox.CheckedChanged
         If TopicSearchCheckBox.Checked = False Then
-            AminoMain.SearchButton.Visible = False
+            AminoMain.TSearchButton.Visible = False
             My.Settings.Search = 0
             My.Settings.Save()
         Else
-            AminoMain.SearchButton.Visible = True
+            AminoMain.TSearchButton.Visible = True
             My.Settings.Search = 1
             My.Settings.Save()
         End If

@@ -149,3 +149,5 @@ F:\GitHub\Amino-For-Desktop\Amino\bin\x86\Debug\Amino.pdb
 F:\GitHub\Amino-For-Desktop\Amino\bin\x86\Debug\Amino.xml
 F:\GitHub\Amino-For-Desktop\Amino\bin\x86\Debug\Geckofx-Core.dll
 F:\GitHub\Amino-For-Desktop\Amino\bin\x86\Debug\Geckofx-Winforms.dll
+J:\Projects\Amino\Amino\obj\x86\Debug\Amino.SettingsPanelPersonalise.resources
+J:\Projects\Amino\Amino\obj\x86\Debug\Amino.SettingsPanelUpdates.resources

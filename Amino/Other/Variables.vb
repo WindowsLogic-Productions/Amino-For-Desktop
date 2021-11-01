@@ -1,8 +1,8 @@
 ﻿Public Class Variables
 #Region "Shared Variables"
-    Public Shared ver As String = My.Application.Info.Version.ToString + " (March 2019)"
+    Public Shared ver As String = My.Application.Info.Version.ToString + " (October 2021)"
     Public Shared user As String = System.Windows.Forms.SystemInformation.UserName
-    Public Shared appname As String = "Amino™ For Desktop"
+    Public Shared appname As String = "Amino For Desktop"
     Public Shared vertext As String = "https://u.windowslogic.co.uk/AMINO/AMINO.txt"
     Public Shared setup As String = "https://u.windowslogic.co.uk/AMINO/AminoForDesktop%20Setup.exe"
 

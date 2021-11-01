@@ -251,9 +251,10 @@ Partial Class SettingsPanelGeneral
         'FollowCheckBox
         '
         Me.FollowCheckBox.AutoSize = True
+        Me.FollowCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.FollowCheckBox.Location = New System.Drawing.Point(47, 50)
         Me.FollowCheckBox.Name = "FollowCheckBox"
-        Me.FollowCheckBox.Size = New System.Drawing.Size(207, 17)
+        Me.FollowCheckBox.Size = New System.Drawing.Size(213, 18)
         Me.FollowCheckBox.TabIndex = 5
         Me.FollowCheckBox.Text = "Show Followers/Following options"
         Me.FollowCheckBox.UseVisualStyleBackColor = True
@@ -305,6 +306,7 @@ Partial Class SettingsPanelGeneral
         '
         'GPSetButton
         '
+        Me.GPSetButton.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.GPSetButton.Location = New System.Drawing.Point(228, 37)
         Me.GPSetButton.Name = "GPSetButton"
         Me.GPSetButton.Size = New System.Drawing.Size(75, 23)
@@ -322,11 +324,11 @@ Partial Class SettingsPanelGeneral
         '
         'PictureBox5
         '
-        Me.PictureBox5.Image = Global.Amino.My.Resources.Resources.Minimise
+        Me.PictureBox5.Image = Global.Amino.My.Resources.Resources.One_click
         Me.PictureBox5.Location = New System.Drawing.Point(6, 21)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(32, 32)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox5.Size = New System.Drawing.Size(32, 41)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox5.TabIndex = 1
         Me.PictureBox5.TabStop = False
         '
@@ -377,9 +379,10 @@ Partial Class SettingsPanelGeneral
         'SettingsPanelButton
         '
         Me.SettingsPanelButton.AutoSize = True
+        Me.SettingsPanelButton.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.SettingsPanelButton.Location = New System.Drawing.Point(271, 36)
         Me.SettingsPanelButton.Name = "SettingsPanelButton"
-        Me.SettingsPanelButton.Size = New System.Drawing.Size(98, 17)
+        Me.SettingsPanelButton.Size = New System.Drawing.Size(104, 18)
         Me.SettingsPanelButton.TabIndex = 3
         Me.SettingsPanelButton.TabStop = True
         Me.SettingsPanelButton.Text = "Settings Panel"
@@ -388,9 +391,10 @@ Partial Class SettingsPanelGeneral
         'SystemTrayButton
         '
         Me.SystemTrayButton.AutoSize = True
+        Me.SystemTrayButton.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.SystemTrayButton.Location = New System.Drawing.Point(121, 36)
         Me.SystemTrayButton.Name = "SystemTrayButton"
-        Me.SystemTrayButton.Size = New System.Drawing.Size(144, 17)
+        Me.SystemTrayButton.Size = New System.Drawing.Size(150, 18)
         Me.SystemTrayButton.TabIndex = 2
         Me.SystemTrayButton.TabStop = True
         Me.SystemTrayButton.Text = "Minimise to system tray"
@@ -399,9 +403,10 @@ Partial Class SettingsPanelGeneral
         'NothingButton
         '
         Me.NothingButton.AutoSize = True
+        Me.NothingButton.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.NothingButton.Location = New System.Drawing.Point(47, 36)
         Me.NothingButton.Name = "NothingButton"
-        Me.NothingButton.Size = New System.Drawing.Size(68, 17)
+        Me.NothingButton.Size = New System.Drawing.Size(74, 18)
         Me.NothingButton.TabIndex = 1
         Me.NothingButton.TabStop = True
         Me.NothingButton.Text = "Nothing"
@@ -442,9 +447,10 @@ Partial Class SettingsPanelGeneral
         'TopicSearchCheckBox
         '
         Me.TopicSearchCheckBox.AutoSize = True
+        Me.TopicSearchCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.TopicSearchCheckBox.Location = New System.Drawing.Point(47, 50)
         Me.TopicSearchCheckBox.Name = "TopicSearchCheckBox"
-        Me.TopicSearchCheckBox.Size = New System.Drawing.Size(126, 17)
+        Me.TopicSearchCheckBox.Size = New System.Drawing.Size(132, 18)
         Me.TopicSearchCheckBox.TabIndex = 5
         Me.TopicSearchCheckBox.Text = "Enable topic search"
         Me.TopicSearchCheckBox.UseVisualStyleBackColor = True

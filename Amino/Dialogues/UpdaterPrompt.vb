@@ -5,9 +5,9 @@
         Label1.Parent = PictureBox2
 
         'Load personalisation settings.
-        'If My.Settings.CCE = 1 Then
-        'Me.BackColor = My.Settings.CustomColour
-        'End If
+        If My.Settings.CCE = 1 Then
+            Me.BackColor = My.Settings.CustomColour
+        End If
     End Sub
 #End Region
 #Region "Buttons"

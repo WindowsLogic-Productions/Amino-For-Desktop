@@ -35,7 +35,7 @@ Partial Class Dedicate
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(12, 122)
+        Me.Label3.Location = New System.Drawing.Point(12, 143)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(159, 13)
         Me.Label3.TabIndex = 6
@@ -68,10 +68,10 @@ Partial Class Dedicate
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(12, 66)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(301, 39)
+        Me.Label1.Size = New System.Drawing.Size(301, 65)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Amino For Desktop is programmed with love and care by:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Timothy Iles (WindowsLo" &
-    "gic)"
+    "gic)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Dedicated to Frejya~ <3"
         '
         'OKButton
         '
@@ -79,7 +79,7 @@ Partial Class Dedicate
         Me.OKButton.BackColor = System.Drawing.Color.MidnightBlue
         Me.OKButton.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.OKButton.ForeColor = System.Drawing.Color.White
-        Me.OKButton.Location = New System.Drawing.Point(238, 117)
+        Me.OKButton.Location = New System.Drawing.Point(238, 137)
         Me.OKButton.Name = "OKButton"
         Me.OKButton.Size = New System.Drawing.Size(75, 23)
         Me.OKButton.TabIndex = 4
@@ -92,7 +92,7 @@ Partial Class Dedicate
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DodgerBlue
-        Me.ClientSize = New System.Drawing.Size(325, 152)
+        Me.ClientSize = New System.Drawing.Size(325, 172)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label1)

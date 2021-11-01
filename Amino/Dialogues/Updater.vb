@@ -33,9 +33,9 @@
     Private Sub Updater_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         'Load personalisation settings.
-        'If My.Settings.CCE = 1 Then
-        'Me.BackColor = My.Settings.CustomColour
-        'End If
+        If My.Settings.CCE = 1 Then
+            Me.BackColor = My.Settings.CustomColour
+        End If
 
         TitleText.Parent = PictureBox2
         PictureBox1.Parent = PictureBox2

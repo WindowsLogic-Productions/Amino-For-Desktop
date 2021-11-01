@@ -11,6 +11,9 @@
         'Sound
 
         'Load personalisation settings.
+        If My.Settings.CCE = 1 Then
+            Me.BackColor = My.Settings.CustomColour
+        End If
 
         'Load version number and license.
         Variables.ParseVariables(VerInfo)

@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("Easily use Amino on your Windows PC.")>
 <Assembly: AssemblyCompany("WindowsLogic Productions")>
 <Assembly: AssemblyProduct("Amino For Desktop")>
-<Assembly: AssemblyCopyright("Copyright © 2018 - 2020 WindowsLogic Productions.")>
+<Assembly: AssemblyCopyright("Copyright © 2018 - 2021 WindowsLogic Productions.")>
 <Assembly: AssemblyTrademark("Amino For Desktop")>
 
 <Assembly: ComVisible(False)>

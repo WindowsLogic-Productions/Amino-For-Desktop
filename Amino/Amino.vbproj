@@ -79,11 +79,11 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Geckofx-Core, Version=60.0.45.0, Culture=neutral, PublicKeyToken=3209ac31600d1857, processorArchitecture=x86">
-      <HintPath>..\packages\Geckofx60.32.60.0.45\lib\net45\Geckofx-Core.dll</HintPath>
+    <Reference Include="Geckofx-Core, Version=60.0.55.0, Culture=neutral, PublicKeyToken=3209ac31600d1857, processorArchitecture=x86">
+      <HintPath>..\packages\Geckofx60.32.60.0.55\lib\net45\Geckofx-Core.dll</HintPath>
     </Reference>
-    <Reference Include="Geckofx-Winforms, Version=60.0.45.0, Culture=neutral, PublicKeyToken=3209ac31600d1857, processorArchitecture=x86">
-      <HintPath>..\packages\Geckofx60.32.60.0.45\lib\net45\Geckofx-Winforms.dll</HintPath>
+    <Reference Include="Geckofx-Winforms, Version=60.0.55.0, Culture=neutral, PublicKeyToken=3209ac31600d1857, processorArchitecture=x86">
+      <HintPath>..\packages\Geckofx60.32.60.0.55\lib\net45\Geckofx-Winforms.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -205,16 +205,16 @@
     <Compile Include="Settings Panel\SettingsPanelGeneral.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SettingsPanelPersonalise.Designer.vb">
+    <Compile Include="Settings Panel\SettingsPanelPersonalise.Designer.vb">
       <DependentUpon>SettingsPanelPersonalise.vb</DependentUpon>
     </Compile>
-    <Compile Include="SettingsPanelPersonalise.vb">
+    <Compile Include="Settings Panel\SettingsPanelPersonalise.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SettingsPanelUpdates.Designer.vb">
+    <Compile Include="Settings Panel\SettingsPanelUpdates.Designer.vb">
       <DependentUpon>SettingsPanelUpdates.vb</DependentUpon>
     </Compile>
-    <Compile Include="SettingsPanelUpdates.vb">
+    <Compile Include="Settings Panel\SettingsPanelUpdates.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -264,10 +264,10 @@
     <EmbeddedResource Include="Settings Panel\SettingsPanelGeneral.resx">
       <DependentUpon>SettingsPanelGeneral.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SettingsPanelPersonalise.resx">
+    <EmbeddedResource Include="Settings Panel\SettingsPanelPersonalise.resx">
       <DependentUpon>SettingsPanelPersonalise.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SettingsPanelUpdates.resx">
+    <EmbeddedResource Include="Settings Panel\SettingsPanelUpdates.resx">
       <DependentUpon>SettingsPanelUpdates.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
@@ -317,6 +317,14 @@
     <None Include="Resources\Forward.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\One-click.png" />
+    <None Include="Resources\Colours.ico" />
+    <None Include="Resources\Updates Off.ico" />
+    <None Include="Resources\Updates On.ico" />
+    <None Include="Resources\Updates New.ico" />
+    <None Include="Resources\LogOut.ico" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Firefox\AccessibleHandler.dll" />
     <Content Include="Firefox\AccessibleMarshal.dll" />
     <Content Include="Firefox\breakpadinjector.dll" />
@@ -337,13 +345,14 @@
     <Content Include="Firefox\qipcap.dll" />
     <Content Include="Firefox\softokn3.dll" />
     <Content Include="Firefox\xul.dll" />
+    <None Include="Resources\BadGradient.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
-  <Import Project="..\packages\Geckofx60.32.60.0.45\build\Geckofx60.32.targets" Condition="Exists('..\packages\Geckofx60.32.60.0.45\build\Geckofx60.32.targets')" />
+  <Import Project="..\packages\Geckofx60.32.60.0.55\build\Geckofx60.32.targets" Condition="Exists('..\packages\Geckofx60.32.60.0.55\build\Geckofx60.32.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Geckofx60.32.60.0.45\build\Geckofx60.32.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Geckofx60.32.60.0.45\build\Geckofx60.32.targets'))" />
+    <Error Condition="!Exists('..\packages\Geckofx60.32.60.0.55\build\Geckofx60.32.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Geckofx60.32.60.0.55\build\Geckofx60.32.targets'))" />
   </Target>
 </Project>
