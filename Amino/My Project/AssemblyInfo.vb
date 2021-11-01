@@ -9,8 +9,8 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("Amino For Desktop")>
-<Assembly: AssemblyDescription("Easily use Amino on your Windows PC.")>
-<Assembly: AssemblyCompany("WindowsLogic Productions")>
+<Assembly: AssemblyDescription("A small application for using Amino on your x86/x64 Windows Vista, 7, 8.1 and 10 computer.")>
+<Assembly: AssemblyCompany("WindowsLogic")>
 <Assembly: AssemblyProduct("Amino For Desktop")>
 <Assembly: AssemblyCopyright("Copyright © 2018 - 2020 WindowsLogic Productions.")>
 <Assembly: AssemblyTrademark("Amino For Desktop")>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("2.0.0.0")>
-<Assembly: AssemblyFileVersion("2.0.0.0")>
+<Assembly: AssemblyVersion("1.0.1.0")>
+<Assembly: AssemblyFileVersion("1.0.1.0")>

@@ -73,17 +73,14 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Resources\Amino V2.ico</ApplicationIcon>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <ApplicationIcon>Resources\Amino.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Geckofx-Core, Version=60.0.45.0, Culture=neutral, PublicKeyToken=3209ac31600d1857, processorArchitecture=x86">
-      <HintPath>..\packages\Geckofx60.32.60.0.45\lib\net45\Geckofx-Core.dll</HintPath>
+    <Reference Include="Geckofx-Core, Version=60.0.50.0, Culture=neutral, PublicKeyToken=3209ac31600d1857, processorArchitecture=x86">
+      <HintPath>..\packages\Geckofx60.32.60.0.50\lib\net45\Geckofx-Core.dll</HintPath>
     </Reference>
-    <Reference Include="Geckofx-Winforms, Version=60.0.45.0, Culture=neutral, PublicKeyToken=3209ac31600d1857, processorArchitecture=x86">
-      <HintPath>..\packages\Geckofx60.32.60.0.45\lib\net45\Geckofx-Winforms.dll</HintPath>
+    <Reference Include="Geckofx-Winforms, Version=60.0.50.0, Culture=neutral, PublicKeyToken=3209ac31600d1857, processorArchitecture=x86">
+      <HintPath>..\packages\Geckofx60.32.60.0.50\lib\net45\Geckofx-Winforms.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -116,24 +113,6 @@
     <Compile Include="AminoHelp.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AminoJump.Designer.vb">
-      <DependentUpon>AminoJump.vb</DependentUpon>
-    </Compile>
-    <Compile Include="AminoJump.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AminoProfile.Designer.vb">
-      <DependentUpon>AminoProfile.vb</DependentUpon>
-    </Compile>
-    <Compile Include="AminoProfile.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AminoSearch.Designer.vb">
-      <DependentUpon>AminoSearch.vb</DependentUpon>
-    </Compile>
-    <Compile Include="AminoSearch.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Dialogues\AminoAbout.Designer.vb">
       <DependentUpon>AminoAbout.vb</DependentUpon>
     </Compile>
@@ -147,22 +126,16 @@
       <DependentUpon>AminoMain.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Settings Panel\SettingsPanel.Designer.vb">
-      <DependentUpon>SettingsPanel.vb</DependentUpon>
+    <Compile Include="AminoSettings.Designer.vb">
+      <DependentUpon>AminoSettings.vb</DependentUpon>
     </Compile>
-    <Compile Include="Settings Panel\SettingsPanel.vb">
+    <Compile Include="AminoSettings.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Dialogues\AminoWhatsNew.Designer.vb">
       <DependentUpon>AminoWhatsNew.vb</DependentUpon>
     </Compile>
     <Compile Include="Dialogues\AminoWhatsNew.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dialogues\Dedicate.Designer.vb">
-      <DependentUpon>Dedicate.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Dialogues\Dedicate.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Dialogues\Errordiag.designer.vb">
@@ -199,37 +172,10 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Other\Variables.vb" />
-    <Compile Include="Settings Panel\SettingsPanelGeneral.Designer.vb">
-      <DependentUpon>SettingsPanelGeneral.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Settings Panel\SettingsPanelGeneral.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SettingsPanelPersonalise.Designer.vb">
-      <DependentUpon>SettingsPanelPersonalise.vb</DependentUpon>
-    </Compile>
-    <Compile Include="SettingsPanelPersonalise.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SettingsPanelUpdates.Designer.vb">
-      <DependentUpon>SettingsPanelUpdates.vb</DependentUpon>
-    </Compile>
-    <Compile Include="SettingsPanelUpdates.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AminoHelp.resx">
       <DependentUpon>AminoHelp.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AminoJump.resx">
-      <DependentUpon>AminoJump.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AminoProfile.resx">
-      <DependentUpon>AminoProfile.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AminoSearch.resx">
-      <DependentUpon>AminoSearch.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogues\AminoAbout.resx">
       <DependentUpon>AminoAbout.vb</DependentUpon>
@@ -237,14 +183,11 @@
     <EmbeddedResource Include="AminoMain.resx">
       <DependentUpon>AminoMain.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Settings Panel\SettingsPanel.resx">
-      <DependentUpon>SettingsPanel.vb</DependentUpon>
+    <EmbeddedResource Include="AminoSettings.resx">
+      <DependentUpon>AminoSettings.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogues\AminoWhatsNew.resx">
       <DependentUpon>AminoWhatsNew.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dialogues\Dedicate.resx">
-      <DependentUpon>Dedicate.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogues\Errordiag.resx">
       <DependentUpon>Errordiag.vb</DependentUpon>
@@ -261,20 +204,9 @@
     <EmbeddedResource Include="Dialogues\UpdaterPrompt.resx">
       <DependentUpon>UpdaterPrompt.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Settings Panel\SettingsPanelGeneral.resx">
-      <DependentUpon>SettingsPanelGeneral.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SettingsPanelPersonalise.resx">
-      <DependentUpon>SettingsPanelPersonalise.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SettingsPanelUpdates.resx">
-      <DependentUpon>SettingsPanelUpdates.vb</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
     <None Include="Firefox\omni.ja" />
-    <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -288,16 +220,35 @@
     <None Include="Other\packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-    <None Include="Resources\Start-up.ico" />
-    <None Include="Resources\Fullscreen.ico" />
-    <None Include="Resources\Back.ico" />
-    <None Include="Resources\Restore.ico" />
-    <None Include="Resources\Minimise.ico" />
-    <None Include="Resources\Personalisation.ico" />
-    <None Include="Resources\Amino V2.ico" />
+    <Content Include="Firefox\AccessibleHandler.dll" />
+    <Content Include="Firefox\AccessibleMarshal.dll" />
+    <Content Include="Firefox\breakpadinjector.dll" />
+    <Content Include="Firefox\d3dcompiler_47.dll" />
+    <Content Include="Firefox\freebl3.dll" />
+    <Content Include="Firefox\IA2Marshal.dll" />
+    <Content Include="Firefox\icudt58.dll" />
+    <Content Include="Firefox\icuin58.dll" />
+    <Content Include="Firefox\icuuc58.dll" />
+    <Content Include="Firefox\lgpllibs.dll" />
+    <Content Include="Firefox\libEGL.dll" />
+    <Content Include="Firefox\libGLESv2.dll" />
+    <Content Include="Firefox\mozavcodec.dll" />
+    <Content Include="Firefox\mozavutil.dll" />
+    <Content Include="Firefox\mozglue.dll" />
+    <Content Include="Firefox\nss3.dll" />
+    <Content Include="Firefox\nssckbi.dll" />
+    <Content Include="Firefox\nssdbm3.dll" />
+    <Content Include="Firefox\plugin-container.exe" />
+    <Content Include="Firefox\plugin-hang-ui.exe" />
+    <Content Include="Firefox\qipcap.dll" />
+    <Content Include="Firefox\sandboxbroker.dll" />
+    <Content Include="Firefox\softokn3.dll" />
+    <Content Include="Firefox\xul.dll" />
+    <None Include="Resources\Updates New.ico" />
+    <None Include="Resources\Updates Off.ico" />
+    <None Include="Resources\Updates On.ico" />
     <None Include="Resources\Web Studio.ico" />
-    <None Include="Resources\Jump.ico" />
+    <None Include="packages.config" />
     <None Include="Resources\Changes.ico" />
     <None Include="Resources\Update.ico" />
     <None Include="Resources\GoodGradient.png" />
@@ -315,35 +266,18 @@
     <None Include="Resources\Search.ico" />
     <None Include="Resources\Refresh.ico" />
     <None Include="Resources\Forward.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Firefox\AccessibleHandler.dll" />
-    <Content Include="Firefox\AccessibleMarshal.dll" />
-    <Content Include="Firefox\breakpadinjector.dll" />
-    <Content Include="Firefox\d3dcompiler_47.dll" />
-    <Content Include="Firefox\freebl3.dll" />
-    <Content Include="Firefox\IA2Marshal.dll" />
-    <Content Include="Firefox\lgpllibs.dll" />
-    <Content Include="Firefox\libEGL.dll" />
-    <Content Include="Firefox\libGLESv2.dll" />
-    <Content Include="Firefox\mozavcodec.dll" />
-    <Content Include="Firefox\mozavutil.dll" />
-    <Content Include="Firefox\mozglue.dll" />
-    <Content Include="Firefox\nss3.dll" />
-    <Content Include="Firefox\nssckbi.dll" />
-    <Content Include="Firefox\nssdbm3.dll" />
-    <Content Include="Firefox\plugin-container.exe" />
-    <Content Include="Firefox\plugin-hang-ui.exe" />
-    <Content Include="Firefox\qipcap.dll" />
-    <Content Include="Firefox\softokn3.dll" />
-    <Content Include="Firefox\xul.dll" />
+    <None Include="Resources\Back.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
-  <Import Project="..\packages\Geckofx60.32.60.0.45\build\Geckofx60.32.targets" Condition="Exists('..\packages\Geckofx60.32.60.0.45\build\Geckofx60.32.targets')" />
+  <Import Project="..\packages\Geckofx45.45.0.34\build\Geckofx45.targets" Condition="Exists('..\packages\Geckofx45.45.0.34\build\Geckofx45.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Geckofx60.32.60.0.45\build\Geckofx60.32.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Geckofx60.32.60.0.45\build\Geckofx60.32.targets'))" />
+    <Error Condition="!Exists('..\packages\Geckofx45.45.0.34\build\Geckofx45.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Geckofx45.45.0.34\build\Geckofx45.targets'))" />
+    <Error Condition="!Exists('..\packages\Geckofx60.32.60.0.22\build\Geckofx60.32.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Geckofx60.32.60.0.22\build\Geckofx60.32.targets'))" />
+    <Error Condition="!Exists('..\packages\Geckofx60.32.60.0.50\build\Geckofx60.32.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Geckofx60.32.60.0.50\build\Geckofx60.32.targets'))" />
   </Target>
+  <Import Project="..\packages\Geckofx60.32.60.0.22\build\Geckofx60.32.targets" Condition="Exists('..\packages\Geckofx60.32.60.0.22\build\Geckofx60.32.targets')" />
+  <Import Project="..\packages\Geckofx60.32.60.0.50\build\Geckofx60.32.targets" Condition="Exists('..\packages\Geckofx60.32.60.0.50\build\Geckofx60.32.targets')" />
 </Project>

@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Copyright.Text" xml:space="preserve">
-    <value>Amino For Desktop is Copyright © 2018 - 2020 WindowsLogic Productions.
-All rights reserved. Amino is a trademark of Narvii, Inc.
+    <value>Amino For Desktop is Copyright © 2018 - 2020 WindowsLogic Productions
+All rights reserved. Amino logo is Copyright © Narvii, Inc.
 
 This product is licensed under the                                      to:
 %user%</value>

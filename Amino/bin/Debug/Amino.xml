@@ -27,11 +27,6 @@ Amino
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Amino.My.Resources.Resources.Amino_V2">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:Amino.My.Resources.Resources.Back">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -62,27 +57,12 @@ Amino
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Amino.My.Resources.Resources.Fullscreen">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:Amino.My.Resources.Resources.GoodGradient">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:Amino.My.Resources.Resources.Information">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Amino.My.Resources.Resources.Jump">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Amino.My.Resources.Resources.Minimise">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -97,22 +77,12 @@ Amino
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Amino.My.Resources.Resources.Personalisation">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:Amino.My.Resources.Resources.Question">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:Amino.My.Resources.Resources.Refresh">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Amino.My.Resources.Resources.Restore">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -127,12 +97,22 @@ Amino
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Amino.My.Resources.Resources.Start_up">
+<member name="P:Amino.My.Resources.Resources.Update">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Amino.My.Resources.Resources.Update">
+<member name="P:Amino.My.Resources.Resources.Updates_New">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Amino.My.Resources.Resources.Updates_Off">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Amino.My.Resources.Resources.Updates_On">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

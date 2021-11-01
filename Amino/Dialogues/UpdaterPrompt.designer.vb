@@ -90,13 +90,13 @@ Partial Class UpdaterPrompt
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(419, 26)
         Me.Label2.TabIndex = 0
-        Me.Label2.Text = "You are running an out of date copy of Amino™ For Desktop." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Updating provides you" &
-    " with new features, fixes and performance improvements."
+        Me.Label2.Text = "You are running an out of date copy of Amino For Desktop." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Updating provides you " &
+    "with new features, fixes and performance improvements."
         '
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Image = Global.Amino.My.Resources.Resources.CircleWarningIco
+        Me.PictureBox1.Image = Global.Amino.My.Resources.Resources.Updates_New
         Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(32, 32)
