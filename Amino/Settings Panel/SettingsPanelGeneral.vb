@@ -101,6 +101,10 @@
 
 
 #End Region
+#Region "Start-up"
+
+
+#End Region
 #Region "Other"
     Private Sub BackButton_Click(sender As Object, e As EventArgs) Handles BackButton.Click
         SettingsPanel.Show()
@@ -134,6 +138,24 @@
             AminoMain.TSearchButton.Visible = True
             My.Settings.Search = 1
             My.Settings.Save()
+        End If
+    End Sub
+
+    Private Sub NothingButton_CheckedChanged(sender As Object, e As EventArgs) Handles NothingButton.CheckedChanged
+        If NothingButton.Checked = True Then
+            My.Settings.Startup = 0
+        End If
+    End Sub
+
+    Private Sub SystemTrayButton_CheckedChanged(sender As Object, e As EventArgs) Handles SystemTrayButton.CheckedChanged
+        If SystemTrayButton.Checked = True Then
+            My.Settings.Startup = 1
+        End If
+    End Sub
+
+    Private Sub SettingsPanelButton_CheckedChanged(sender As Object, e As EventArgs) Handles SettingsPanelButton.CheckedChanged
+        If SettingsPanelButton.Checked = True Then
+            My.Settings.Startup = 2
         End If
     End Sub
 

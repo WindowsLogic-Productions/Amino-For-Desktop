@@ -129,6 +129,7 @@ Partial Class AminoAbout
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "AminoAbout"
+        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "About Amino™ For Desktop"
         Me.TopMost = True

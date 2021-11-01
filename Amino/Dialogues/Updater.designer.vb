@@ -157,6 +157,7 @@ Partial Class Updater
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Updater"
+        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Automatic Updates"
         Me.TopMost = True

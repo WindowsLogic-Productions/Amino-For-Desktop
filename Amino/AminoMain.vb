@@ -22,6 +22,22 @@ Public Class AminoMain
         'Load update settings.
         Variables.Update_Settings()
 
+        'Load start-up settings.
+        If My.Settings.Startup = 0 Then
+
+        End If
+
+        If My.Settings.Startup = 1 Then
+            WindowState = FormWindowState.Minimized
+            Me.Visible = False
+            SysTrayIcon.Visible = True
+            SysTrayIcon.ShowBalloonTip(1, "Amino For Desktop - Notification", "Amino For Desktop is now running in the background.", ToolTipIcon.Info)
+        End If
+
+        If My.Settings.Startup = 2 Then
+            SettingsPanel.Show()
+        End If
+
         'Load topic search settings.
         If My.Settings.Search = 0 Then
             TSearchButton.Visible = False
