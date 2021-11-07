@@ -1,10 +1,10 @@
 ﻿Public Class Variables
 #Region "Shared Variables"
-    Public Shared ver As String = My.Application.Info.Version.ToString + " (October 2021)"
+    Public Shared ver As String = My.Application.Info.Version.ToString + " (November 2021)"
     Public Shared user As String = System.Windows.Forms.SystemInformation.UserName
     Public Shared appname As String = "Amino For Desktop"
-    Public Shared vertext As String = "https://u.windowslogic.co.uk/AMINO/AMINO.txt"
-    Public Shared setup As String = "https://u.windowslogic.co.uk/AMINO/AminoForDesktop%20Setup.exe"
+    Public Shared vertext As String = "https://keybase.pub/windowslogic/Applications/Updates/Amino/AMINO.txt"
+    Public Shared setup As String = "https://windowslogic.keybase.pub/Applications/Updates/Amino/AminoForDesktop%20Setup.exe?dl=1"
 
     Public Shared Sub ParseVariables(input As Label)
         input.Text = input.Text.Replace("%ver%", Variables.ver).Replace("%user%", Variables.user).Replace("%appname%", Variables.appname)
