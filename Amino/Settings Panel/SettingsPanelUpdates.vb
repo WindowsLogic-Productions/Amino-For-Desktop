@@ -19,14 +19,14 @@
 
     End Sub
 
-    Private Sub EnableUpdates_CheckedChanged(sender As Object, e As EventArgs)
+    Private Sub EnableUpdates_CheckedChanged(sender As Object, e As EventArgs) Handles EnableUpdates.CheckedChanged
         If EnableUpdates.Checked = True Then
             PictureBox3.Image = My.Resources.GoodGradient
             My.Settings.Updates = 0
         End If
     End Sub
 
-    Private Sub DisableUpdates_CheckedChanged(sender As Object, e As EventArgs)
+    Private Sub DisableUpdates_CheckedChanged(sender As Object, e As EventArgs) Handles DisableUpdates.CheckedChanged
         If DisableUpdates.Checked = True Then
             PictureBox3.Image = My.Resources.BadGradient
             My.Settings.Updates = 1

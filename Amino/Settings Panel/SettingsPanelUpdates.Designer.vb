@@ -24,25 +24,25 @@ Partial Class SettingsPanelUpdates
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SettingsPanelUpdates))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.BackButton = New System.Windows.Forms.Button()
         Me.TitleLabel = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.UpdatesTab = New System.Windows.Forms.TabPage()
+        Me.ManualUpdateButton = New System.Windows.Forms.Button()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.DisableUpdates = New System.Windows.Forms.RadioButton()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.EnableUpdates = New System.Windows.Forms.RadioButton()
-        Me.ManualUpdateButton = New System.Windows.Forms.Button()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.BackButton = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.UpdatesTab.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -57,6 +57,17 @@ Partial Class SettingsPanelUpdates
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(441, 53)
         Me.Panel1.TabIndex = 14
+        '
+        'BackButton
+        '
+        Me.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BackButton.ForeColor = System.Drawing.Color.White
+        Me.BackButton.Image = Global.Amino.My.Resources.Resources.Back
+        Me.BackButton.Location = New System.Drawing.Point(3, 3)
+        Me.BackButton.Name = "BackButton"
+        Me.BackButton.Size = New System.Drawing.Size(48, 48)
+        Me.BackButton.TabIndex = 15
+        Me.BackButton.UseVisualStyleBackColor = True
         '
         'TitleLabel
         '
@@ -90,73 +101,6 @@ Partial Class SettingsPanelUpdates
         Me.UpdatesTab.Text = "Updates"
         Me.UpdatesTab.UseVisualStyleBackColor = True
         '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.PictureBox1)
-        Me.GroupBox1.Controls.Add(Me.DisableUpdates)
-        Me.GroupBox1.Controls.Add(Me.PictureBox2)
-        Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.EnableUpdates)
-        Me.GroupBox1.Location = New System.Drawing.Point(6, 16)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(397, 128)
-        Me.GroupBox1.TabIndex = 19
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Update Settings"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(6, 18)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(298, 13)
-        Me.Label6.TabIndex = 12
-        Me.Label6.Text = "It is recommended that you keep updates on at all times."
-        '
-        'DisableUpdates
-        '
-        Me.DisableUpdates.AutoSize = True
-        Me.DisableUpdates.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.DisableUpdates.Location = New System.Drawing.Point(47, 78)
-        Me.DisableUpdates.Name = "DisableUpdates"
-        Me.DisableUpdates.Size = New System.Drawing.Size(211, 17)
-        Me.DisableUpdates.TabIndex = 14
-        Me.DisableUpdates.Text = "Disable updates (not recommended)"
-        Me.DisableUpdates.UseVisualStyleBackColor = True
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label2.Location = New System.Drawing.Point(44, 59)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(179, 13)
-        Me.Label2.TabIndex = 16
-        Me.Label2.Text = "Check for updates when starting."
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label3.Location = New System.Drawing.Point(44, 97)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(216, 13)
-        Me.Label3.TabIndex = 18
-        Me.Label3.Text = "Do not check for updates when starting."
-        '
-        'EnableUpdates
-        '
-        Me.EnableUpdates.AutoSize = True
-        Me.EnableUpdates.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.EnableUpdates.Location = New System.Drawing.Point(47, 40)
-        Me.EnableUpdates.Name = "EnableUpdates"
-        Me.EnableUpdates.Size = New System.Drawing.Size(187, 17)
-        Me.EnableUpdates.TabIndex = 13
-        Me.EnableUpdates.Text = "Enable updates (recommended)"
-        Me.EnableUpdates.UseVisualStyleBackColor = True
-        '
         'ManualUpdateButton
         '
         Me.ManualUpdateButton.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -182,6 +126,31 @@ Partial Class SettingsPanelUpdates
         Me.PictureBox3.TabIndex = 46
         Me.PictureBox3.TabStop = False
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.PictureBox1)
+        Me.GroupBox1.Controls.Add(Me.DisableUpdates)
+        Me.GroupBox1.Controls.Add(Me.PictureBox2)
+        Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.EnableUpdates)
+        Me.GroupBox1.Location = New System.Drawing.Point(6, 16)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(397, 128)
+        Me.GroupBox1.TabIndex = 19
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Update Settings"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(6, 18)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(298, 13)
+        Me.Label6.TabIndex = 12
+        Me.Label6.Text = "It is recommended that you keep updates on at all times."
+        '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Amino.My.Resources.Resources.Updates_On
@@ -191,6 +160,18 @@ Partial Class SettingsPanelUpdates
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox1.TabIndex = 15
         Me.PictureBox1.TabStop = False
+        '
+        'DisableUpdates
+        '
+        Me.DisableUpdates.AutoSize = True
+        Me.DisableUpdates.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.DisableUpdates.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.DisableUpdates.Location = New System.Drawing.Point(47, 78)
+        Me.DisableUpdates.Name = "DisableUpdates"
+        Me.DisableUpdates.Size = New System.Drawing.Size(217, 18)
+        Me.DisableUpdates.TabIndex = 14
+        Me.DisableUpdates.Text = "Disable updates (not recommended)"
+        Me.DisableUpdates.UseVisualStyleBackColor = True
         '
         'PictureBox2
         '
@@ -202,16 +183,37 @@ Partial Class SettingsPanelUpdates
         Me.PictureBox2.TabIndex = 17
         Me.PictureBox2.TabStop = False
         '
-        'BackButton
+        'Label2
         '
-        Me.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BackButton.ForeColor = System.Drawing.Color.White
-        Me.BackButton.Image = Global.Amino.My.Resources.Resources.Back
-        Me.BackButton.Location = New System.Drawing.Point(3, 3)
-        Me.BackButton.Name = "BackButton"
-        Me.BackButton.Size = New System.Drawing.Size(48, 48)
-        Me.BackButton.TabIndex = 15
-        Me.BackButton.UseVisualStyleBackColor = True
+        Me.Label2.AutoSize = True
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Label2.Location = New System.Drawing.Point(44, 59)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(179, 13)
+        Me.Label2.TabIndex = 16
+        Me.Label2.Text = "Check for updates when starting."
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Label3.Location = New System.Drawing.Point(44, 97)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(216, 13)
+        Me.Label3.TabIndex = 18
+        Me.Label3.Text = "Do not check for updates when starting."
+        '
+        'EnableUpdates
+        '
+        Me.EnableUpdates.AutoSize = True
+        Me.EnableUpdates.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.EnableUpdates.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.EnableUpdates.Location = New System.Drawing.Point(47, 40)
+        Me.EnableUpdates.Name = "EnableUpdates"
+        Me.EnableUpdates.Size = New System.Drawing.Size(193, 18)
+        Me.EnableUpdates.TabIndex = 13
+        Me.EnableUpdates.Text = "Enable updates (recommended)"
+        Me.EnableUpdates.UseVisualStyleBackColor = True
         '
         'SettingsPanelUpdates
         '
@@ -234,9 +236,9 @@ Partial Class SettingsPanelUpdates
         Me.Panel1.PerformLayout()
         Me.TabControl1.ResumeLayout(False)
         Me.UpdatesTab.ResumeLayout(False)
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

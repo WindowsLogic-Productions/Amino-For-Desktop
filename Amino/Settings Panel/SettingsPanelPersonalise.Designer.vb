@@ -22,6 +22,7 @@ Partial Class SettingsPanelPersonalise
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SettingsPanelPersonalise))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.BackButton = New System.Windows.Forms.Button()
@@ -34,6 +35,7 @@ Partial Class SettingsPanelPersonalise
         Me.CustomColourLabel = New System.Windows.Forms.Label()
         Me.CustomColourButton = New System.Windows.Forms.Button()
         Me.ColorDialog1 = New System.Windows.Forms.ColorDialog()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.Panel1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -62,6 +64,7 @@ Partial Class SettingsPanelPersonalise
         Me.BackButton.Name = "BackButton"
         Me.BackButton.Size = New System.Drawing.Size(48, 48)
         Me.BackButton.TabIndex = 3
+        Me.ToolTip1.SetToolTip(Me.BackButton, "Back to Settings Panel.")
         Me.BackButton.UseVisualStyleBackColor = False
         '
         'TitleLabel
@@ -188,4 +191,5 @@ Partial Class SettingsPanelPersonalise
     Friend WithEvents CustomColourLabel As Label
     Friend WithEvents CustomColourButton As Button
     Friend WithEvents ColorDialog1 As ColorDialog
+    Friend WithEvents ToolTip1 As ToolTip
 End Class
