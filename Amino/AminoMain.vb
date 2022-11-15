@@ -8,7 +8,7 @@ Public Class AminoMain
         Xpcom.Initialize("Firefox")
 
 
-        Dim sUserAgent As String = "Mozilla/5.0 (Windows NT 4.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/80.0 (.NET CLR 3.5.30729)"
+        Dim sUserAgent As String = "Mozilla/5.0 (Windows NT 4.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/999.0 (.NET CLR 3.5.30729)"
         Gecko.GeckoPreferences.User("general.useragent.override") = sUserAgent
 
     End Sub

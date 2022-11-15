@@ -112,7 +112,7 @@ Partial Class Updater
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Image = Global.Amino.My.Resources.Resources.Okay
+        Me.PictureBox1.Image = Global.Amino.My.Resources.Resources.Updates_On
         Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(32, 32)
